@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-const myTestimonials = () => {
+const MyTestimonials = () => {
   return (
-    <div>myTestimonials</div>
+    <div className='relative w-full min-h-[37.5rem] mx-auto overflow-hidden flex items-center justify-center'>
+      {/* Background Image */}
+      <img
+        src="/src/assets/myGif.gif"
+        className="absolute inset-0 w-full h-full object-cover"
+        alt="Background Image"
+      />
+
+      
+      
+      My Testimonials
+    </div>
   )
 }
 
-export default myTestimonials
+export default MyTestimonials
