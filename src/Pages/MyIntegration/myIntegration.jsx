@@ -13,7 +13,7 @@ const MyIntegration = () => {
       {/* Background Image */}
       <img 
         src="/src/assets/columns.png" 
-        className="absolute inset-0 w-full h-full object-cover opacity-50"
+        className="absolute inset-0 w-full h-full object-cover"
         alt="Background Overlay"
       />
 
@@ -28,17 +28,17 @@ const MyIntegration = () => {
 
         {/* Text Content */}
         <div className="flex flex-col items-start max-w-lg">
-          <p className="text-5xl mb-4 font-bold">
+          <p className="text-5xl mb-4 poppins-bold">
             Integrated with your 
           </p>
-          <p className="text-5xl mb-4 font-bold">
+          <p className="text-5xl mb-4 poppins-bold">
             favourite apps
           </p>
-          <p className="text-[16px] mb-8 font-normal">
+          <p className="text-[16px] mb-8 poppins-regular">
             Lorem ipsum dolor sit amet consectetur. Tortor sed aliquam sed id
             enim donec pharetra. Sit a quam sed ante nisl eget mauris amet.
           </p>
-          <button className="bg-white text-[#4F46E5] px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all">
+          <button className="bg-white text-[#684fff] px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all">
             Get Started
           </button>
         </div>
