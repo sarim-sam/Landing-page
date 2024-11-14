@@ -33,7 +33,7 @@ export const testimonials = [
   {
     id: 4,
     name: 'Amelia Joseph',
-    title: 'Chief Managerr',
+    title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
     quote: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations. Creativity flowed, and the results were beyond my expectations.',
@@ -41,7 +41,7 @@ export const testimonials = [
   {
     id: 5,
     name: 'Amelia Joseph',
-    title: 'Chief Managerrr',
+    title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
     quote: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations. Creativity flowed, and the results were beyond my expectations.',
@@ -49,7 +49,7 @@ export const testimonials = [
   {
     id: 6,
     name: 'Amelia Joseph',
-    title: 'Chief Managerrrr',
+    title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
     quote: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations. Creativity flowed, and the results were beyond my expectations.',
