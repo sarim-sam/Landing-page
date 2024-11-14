@@ -1,5 +1,8 @@
+// IMPORTS
 import React from 'react';
 
+
+// FRONTEND
 const MyIntegration = () => {
   return (
     <div className="relative w-full min-h-[65vh] overflow-hidden bg-[#4F46E5] flex items-center justify-center">

@@ -416,3 +416,93 @@ input {
 .modal-body{
   z-index: 5999;
 }
+
+
+/* ANIMATIONS */
+/* @keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-left {
+  animation: slideLeft 0.5s ease-in-out forwards;
+}
+
+.slide-right {
+  animation: slideRight 0.5s ease-in-out forwards;
+} */
+
+
+/* CSS Animations */
+/* Sliding Animation */
+/* @keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-next {
+  animation: slideInLeft 0.5s ease-in-out;
+}
+
+.slide-prev {
+  animation: slideInRight 0.5s ease-in-out;
+} */
+
+
+/* Define animations for sliding left and right */
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations to each testimonial card */
+.testimonial-card.slide-next {
+  animation: slideLeft 0.5s ease-in-out;
+}
+
+.testimonial-card.slide-prev {
+  animation: slideRight 0.5s ease-in-out;
+}

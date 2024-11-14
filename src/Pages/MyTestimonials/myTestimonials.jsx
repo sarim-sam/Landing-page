@@ -1,5 +1,5 @@
 // IMPORTS
-import React from 'react';
+import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
 import arrowLeft from '@iconify-icons/mdi/arrow-left';
 import arrowRight from '@iconify-icons/mdi/arrow-right';
@@ -10,36 +10,58 @@ import { testimonials } from '../../data/data.js';
 // TestimonialCard.
 const TestimonialCard = ({ name, title, image, icon, quote }) => {
   return (
-    <div className="max-w-sm p-5 rounded-lg shadow-md bg-white">
-      <div className="text-center mb-4 text-3xl text-gray-300">
-        <img src={icon} alt={`${name}`} className="w-12 h-12 rounded-full" />
-      </div>
-      <div className="flex items-center gap-3 mb-3">
-        <img src={image} alt={`${name}`} className="w-12 h-12 rounded-full" />
-        <div>
-          <p className="text-lg poppins-semibold">{name}</p>
-          <p className="text-sm text-gray-500 poppins-medium">{title}</p>
+    <div className="max-w-md p-8 rounded-lg shadow-lg bg-transparent relative">
+      <div className="flex items-center gap-4 mb-4 relative">
+        <div className="relative">
+          <img src={image} alt={`${name}`} className="w-16 h-16 rounded-full" />
+          <div className="absolute -top-14 -right-6 w-12 h-12 bg-transparent rounded-full flex items-center justify-center shadow-lg text-transparent">
+            <img src={icon} alt="icon" className="w-10 h-10" />
+          </div>
+        </div>
+        <div className='flex space-y-3 flex-col'>
+          <p className="text-xl poppins-semibold text-black">{name}</p>
+          <p className="text-base poppins-medium text-black">{title}</p>
         </div>
       </div>
-      <p className="text-sm text-gray-700 poppins-regular">{quote}</p>
+      <p className="text-base text-gray-700 poppins-regular">{quote}</p>
     </div>
   );
 };
 
 // Testimonials.
-export const Testimonials = () => {
+export const Testimonials = ({ startIndex, direction }) => {
+  const visibleTestimonials = testimonials.slice(startIndex, startIndex + 3);
+
   return (
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {testimonials.map((testimonial, index) => (
-        <TestimonialCard key={index} {...testimonial} />
+      {visibleTestimonials.map((testimonial, index) => (
+        <div key={index} className={`testimonial-card ${direction}`}>
+          <TestimonialCard {...testimonial} />
+        </div>
       ))}
     </div>
   );
 };
 
-
 // MyTestimonials.
 const MyTestimonials = () => {
+  const [startIndex, setStartIndex] = useState(0);
+  const [direction, setDirection] = useState('');
+
+  const handleNext = () => {
+    if (startIndex + 3 < testimonials.length) {
+      setDirection('slide-next');
+      setStartIndex(startIndex + 1);
+    }
+  };
+
+  const handlePrev = () => {
+    if (startIndex > 0) {
+      setDirection('slide-prev');
+      setStartIndex(startIndex - 1);
+    }
+  };
+
   return (
     <div
       className="relative w-full min-h-[65vh] bg-[#FFFFFF] mx-auto overflow-hidden flex flex-col items-start justify-start px-4 py-8 sm:px-8 md:px-12"
@@ -55,17 +77,23 @@ const MyTestimonials = () => {
           What Our Client Said about us
         </p>
         <div className="flex gap-4">
-          <button className="w-20 h-20 rounded-full bg-[#f8f9ff] flex items-center justify-center">
+          <button
+            onClick={handlePrev}
+            className="w-20 h-20 rounded-full bg-[#f8f9ff] hover:bg-[#e0e4ff] flex items-center justify-center"
+          >
             <Icon icon={arrowLeft} width="40" height="40" className="text-[#836fff]" />
           </button>
-          <button className="w-20 h-20 rounded-full bg-[#684fff] flex items-center justify-center">
+          <button
+            onClick={handleNext}
+            className="w-20 h-20 rounded-full bg-[#684fff] hover:bg-[#836fff] flex items-center justify-center"
+          >
             <Icon icon={arrowRight} width="40" height="40" className="text-[#ffffff]" />
           </button>
         </div>
       </div>
 
-      {/* Render Testimonials component */}
-      <Testimonials />
+      {/* Testimonials */}
+      <Testimonials startIndex={startIndex} direction={direction} />
     </div>
   );
 };

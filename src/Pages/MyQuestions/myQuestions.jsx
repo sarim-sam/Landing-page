@@ -1,20 +1,27 @@
 // IMPORTS
 import React, { useState } from 'react';
 import { faqs } from '../../data/data.js';
-import { FiArrowDownRight } from 'react-icons/fi';
+import { FiArrowDownRight, FiArrowUpRight } from 'react-icons/fi';
+
 
 // FRONTEND
 const FAQItem = ({ question, answer, isOpen, onClick }) => (
   <div 
     onClick={onClick} 
-    className="cursor-pointer bg-white p-10 rounded-xl shadow-md mb-8 transition-all duration-300"
+    className="cursor-pointer bg-white p-10 rounded-xl shadow-md mb-8"
   >
     <div className="flex justify-between items-center">
-      <p className=" text-lg poppins-semibold text-gray-800">{question}</p>
+      <p className="text-lg poppins-semibold text-gray-800">{question}</p>
       <span 
-        className={`flex items-center poppins-semibold justify-center w-12 h-12 rounded-full border-2 transition-colors duration-300 ${isOpen ? "border-[#684fff] rotate-90" : "border-black"}`}
+        className={`flex items-center poppins-semibold justify-center w-12 h-12 rounded-full border-2 ${
+          isOpen ? "border-[#684fff]" : "border-black"
+        }`}
       >
-        <FiArrowDownRight size={28} color={isOpen ? "#684fff" : "#2C2C54"} />
+        {isOpen ? (
+          <FiArrowUpRight size={28} color="#684fff" />
+        ) : (
+          <FiArrowDownRight size={28} color="#2C2C54" />
+        )}
       </span>
     </div>
     {isOpen && (
