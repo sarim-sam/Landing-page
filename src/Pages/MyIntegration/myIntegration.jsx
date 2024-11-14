@@ -18,7 +18,7 @@ const MyIntegration = () => {
       />
 
       {/* Centered Frame and Text Container */}
-      <div className="relative flex items-center justify-center text-white text-left z-10 space-x-8">
+      <div className="relative flex items-center justify-center text-white space-x-8">
         {/* Frame Image */}
         <img 
           src="src/assets/frames.png" 
