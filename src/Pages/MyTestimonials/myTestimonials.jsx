@@ -1,9 +1,9 @@
 import React from 'react'
 
-const MyTestimonials = () => {
+const myTestimonials = () => {
   return (
-    <div>My Testimonials</div>
+    <div>myTestimonials</div>
   )
 }
 
-export default MyTestimonials
+export default myTestimonials
