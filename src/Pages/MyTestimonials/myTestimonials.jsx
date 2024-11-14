@@ -51,7 +51,7 @@ const MyTestimonials = () => {
       }}
     >
       <div className="flex items-center w-full mx-2 sm:mx-4 mb-8">
-        <p className="text-2xl sm:text-3xl md:text-5xl poppins-bold mr-auto">
+        <p className="text-5xl sm:text-3xl md:text-5xl poppins-bold mr-auto">
           What Our Client Said about us
         </p>
         <div className="flex gap-4">

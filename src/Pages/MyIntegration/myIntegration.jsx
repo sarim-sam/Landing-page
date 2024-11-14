@@ -38,7 +38,7 @@ const MyIntegration = () => {
             Lorem ipsum dolor sit amet consectetur. Tortor sed aliquam sed id
             enim donec pharetra. Sit a quam sed ante nisl eget mauris amet.
           </p>
-          <button className="bg-white text-[#684fff] px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all">
+          <button className="bg-white text-[#684fff] px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 hover:text-black transition-all">
             Get Started
           </button>
         </div>
