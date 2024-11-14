@@ -5,7 +5,7 @@ const MyIntegration = () => {
     <div className="relative w-full h-[37.5rem] mx-auto overflow-hidden bg-[#4F46E5] flex items-center justify-center">
       {/* Background GIF */}
       <img 
-        src="/public/myGif.gif" 
+        src="/public/assets/myGif.gif" 
         className="absolute inset-0 w-full h-full object-cover"
         alt="Background Animation"
       />
