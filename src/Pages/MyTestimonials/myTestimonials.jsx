@@ -13,8 +13,8 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
       <div className="flex items-center gap-4 mb-4 relative">
         <div className="relative">
           <img src={image} alt={`${name}`} className="w-16 h-16 rounded-full" />
-          <div className="absolute -top-14 -right-6 w-12 h-12 rounded-full flex items-center justify-center">
-            <img src={icon} alt="icon" className="w-10 h-10" />
+          <div className="absolute -top-16 -right-8 w-16 h-16 rounded-full flex items-center justify-center">
+            <img src={icon} alt="icon" className="w-14 h-14" />
           </div>
         </div>
         <div>
@@ -59,7 +59,7 @@ const MyTestimonials = () => {
   };
   return (
     <div
-      className="relative w-full min-h-[65vh] bg-[#FFFFFF] mx-auto overflow-hidden flex flex-col items-start justify-start px-4 py-8 sm:px-8 md:px-12 xs:px-6 ls:px-6 ms:px-6 mt-14"
+      className="relative w-full min-h-[65vh] bg-[#FFFFFF] mx-auto overflow-hidden flex flex-col items-start justify-start px-4 py-8 sm:px-8 md:px-12 xs:px-12 ls:px-12 ms:px-12 mt-14"
       style={{
         backgroundImage: "url('/src/assets/myGroup.png')",
         backgroundSize: "cover",
@@ -68,7 +68,7 @@ const MyTestimonials = () => {
       }}
     >
     <div className="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col ls:flex-col ms:flex-col items-center justify-center w-full mx-2 sm:mx-4 mb-8">
-      <p className="poppins-bold 2xl:text-5xl xl:text-5xl lg:text-4xl lg:text-center lg:mr-12 md:text-3xl md:text-center sm:text-2xl sm:text-center xs:text-2xl mb-4 md:mb-6 sm:mb-8 lg:mb-0">
+      <p className="poppins-bold 2xl:text-5xl xl:text-5xl lg:text-4xl lg:text-center lg:mr-12 md:text-3xl md:text-center sm:text-3xl sm:text-center xs:text-3xl xs:text-center ls:text-3xl ls:text-center ms:text-3xl ms:text-center mb-4 md:mb-6 sm:mb-8 lg:mb-0">
         What Our Client Said about us
       </p>
       <div className="flex gap-6 justify-center">
