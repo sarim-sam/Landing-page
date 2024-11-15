@@ -9,7 +9,7 @@ import { testimonials } from '../../data/data.js';
 // TestimonialCard.
 const TestimonialCard = ({ name, title, image, icon, quote }) => {
   return (
-    <div className="max-w-md p-8 rounded-lg shadow-lg bg-white relative">
+    <div className="max-w-md p-8 rounded-lg shadow-lg bg-white relative mt-14">
       <div className="flex items-center gap-4 mb-4 relative">
         <div className="relative">
           <img src={image} alt={`${name}`} className="w-16 h-16 rounded-full" />
@@ -59,7 +59,7 @@ const MyTestimonials = () => {
   };
   return (
     <div
-      className="relative w-full min-h-[65vh] bg-[#FFFFFF] mx-auto overflow-hidden flex flex-col items-start justify-start px-4 py-8 sm:px-8 md:px-12 xs:px-6 ls:px-6 ms:px-6"
+      className="relative w-full min-h-[65vh] bg-[#FFFFFF] mx-auto overflow-hidden flex flex-col items-start justify-start px-4 py-8 sm:px-8 md:px-12 xs:px-6 ls:px-6 ms:px-6 mt-14"
       style={{
         backgroundImage: "url('/src/assets/myGroup.png')",
         backgroundSize: "cover",
@@ -67,20 +67,20 @@ const MyTestimonials = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-    <div className="flex lg:flex-row md:flex-col sm:flex-col items-center justify-center w-full mx-2 sm:mx-4 mb-8">
-      <p className="poppins-bold text-5xl lg:text-5xl md:text-3xl sm:text-2xl xs:text-2xl text-center md:text-center lg:text-left mb-4 md:mb-6 sm:mb-8 lg:mb-0">
+    <div className="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col ls:flex-col ms:flex-col items-center justify-center w-full mx-2 sm:mx-4 mb-8">
+      <p className="poppins-bold 2xl:text-5xl xl:text-5xl lg:text-4xl lg:text-center lg:mr-12 md:text-3xl md:text-center sm:text-2xl sm:text-center xs:text-2xl mb-4 md:mb-6 sm:mb-8 lg:mb-0">
         What Our Client Said about us
       </p>
-      <div className="flex gap-4 justify-center">
+      <div className="flex gap-6 justify-center">
       <button
       onClick={handlePrev}
-      className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-10 sm:h-10 rounded-full bg-[#f8f9ff] hover:bg-[#e0e4ff] flex items-center justify-center"
+      className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-14 sm:h-14 xs:w-12 xs:h-12 ls:w-10 ls:h-10 ms:w-10 ms:h-10 rounded-full bg-[#f8f9ff] hover:bg-[#e0e4ff] flex items-center justify-center"
       >
         <Icon icon={arrowLeft} width="40" height="40" className="text-[#836fff]" />
       </button>
       <button
-        onClick={handleNext}
-        className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-10 sm:h-10 rounded-full bg-[#684fff] hover:bg-[#836fff] flex items-center justify-center"
+      onClick={handleNext}
+      className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-14 sm:h-14 xs:w-12 xs:h-12 ls:w-10 ls:h-10 ms:w-10 ms:h-10 rounded-full bg-[#684fff] hover:bg-[#836fff] flex items-center justify-center"
       >
         <Icon icon={arrowRight} width="40" height="40" className="text-[#ffffff]" />
       </button>
