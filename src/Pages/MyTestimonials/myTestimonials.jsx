@@ -13,7 +13,7 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
       <div className="flex items-center gap-4 mb-4 relative">
         <div className="relative">
           <img src={image} alt={`${name}`} className="w-16 h-16 rounded-full" />
-          <div className="absolute -top-14 -right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
+          <div className="absolute -top-14 -right-6 w-12 h-12 rounded-full flex items-center justify-center">
             <img src={icon} alt="icon" className="w-10 h-10" />
           </div>
         </div>
