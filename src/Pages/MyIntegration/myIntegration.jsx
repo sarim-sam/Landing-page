@@ -24,7 +24,7 @@ const MyIntegration = () => {
       <div className="relative flex items-center justify-center text-white space-x-8">
         {/* Frame Image */}
         <img 
-          src="src/assets/frames.png" 
+          src="src/assets/frame.png" 
           className="w-full max-w-xl h-auto"
           alt="Frame"
         />
