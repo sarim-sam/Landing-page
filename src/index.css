@@ -136,6 +136,21 @@
   font-style: italic;
 }
 
+/* INTER */
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* INTER END */
 .outline-none {
   outline: none !important;
 }
@@ -147,6 +162,9 @@ button:disabled {
 }
 html {
   font-size: 16px;
+}
+.font-inter {
+  font-size: 18px;
 }
 * {
   margin: 0;
@@ -198,6 +216,12 @@ body {
 }
 .lh-44{
   line-height: 44px;
+}
+.lh-48{
+  line-height: 44px;
+}
+.lh-32{
+  line-height: 32px;
 }
 .dt-header .span {
   position: relative;
