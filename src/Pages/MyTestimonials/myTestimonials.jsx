@@ -59,33 +59,33 @@ const MyTestimonials = () => {
   };
   return (
     <div
-      className="relative w-full min-h-[65vh] bg-[#FFFFFF] mx-auto overflow-hidden flex flex-col items-start justify-start px-4 py-8 sm:px-8 md:px-12"
+      className="relative w-full min-h-[65vh] bg-[#FFFFFF] mx-auto overflow-hidden flex flex-col items-start justify-start px-4 py-8 sm:px-8 md:px-12 xs:px-6 ls:px-6 ms:px-6"
       style={{
-        backgroundImage: "url('/src/assets/myGroup.png')",
+        backgroundImage: "url('/public/myGroup.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex items-center w-full mx-2 sm:mx-4 mb-8">
-        <p className="text-5xl lg:text-5xl md:text-3xl sm:text-2xl poppins-bold mr-auto">
-          What Our Client Said about us
-        </p>
-        <div className="flex gap-4">
-          <button
-            onClick={handlePrev}
-            className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-10 sm:h-10 rounded-full bg-[#f8f9ff] hover:bg-[#e0e4ff] flex items-center justify-center"
-          >
-            <Icon icon={arrowLeft} width="40" height="40" className="text-[#836fff]" />
-          </button>
-          <button
-            onClick={handleNext}
-            className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-10 sm:h-10 rounded-full bg-[#684fff] hover:bg-[#836fff] flex items-center justify-center"
-          >
-            <Icon icon={arrowRight} width="40" height="40" className="text-[#ffffff]" />
-          </button>
-        </div>
+    <div className="flex lg:flex-row md:flex-col sm:flex-col items-center justify-center w-full mx-2 sm:mx-4 mb-8">
+      <p className="poppins-bold text-5xl lg:text-5xl md:text-3xl sm:text-2xl xs:text-2xl text-center md:text-center lg:text-left mb-4 md:mb-6 sm:mb-8 lg:mb-0">
+        What Our Client Said about us
+      </p>
+      <div className="flex gap-4 justify-center">
+      <button
+      onClick={handlePrev}
+      className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-10 sm:h-10 rounded-full bg-[#f8f9ff] hover:bg-[#e0e4ff] flex items-center justify-center"
+      >
+        <Icon icon={arrowLeft} width="40" height="40" className="text-[#836fff]" />
+      </button>
+      <button
+        onClick={handleNext}
+        className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-10 sm:h-10 rounded-full bg-[#684fff] hover:bg-[#836fff] flex items-center justify-center"
+      >
+        <Icon icon={arrowRight} width="40" height="40" className="text-[#ffffff]" />
+      </button>
       </div>
+    </div>
 
       {/* Testimonials */}
       <Testimonials startIndex={startIndex} direction={direction} />

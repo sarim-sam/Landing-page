@@ -5,11 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-      },
+    extend: {},
+    screens: {
+      ms: '240px',
+      ls: '368px', 
+      xs: '480px', 
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
     },
   },
   plugins: [],
-}
+};
