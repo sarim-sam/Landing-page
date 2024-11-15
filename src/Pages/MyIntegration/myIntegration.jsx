@@ -8,14 +8,14 @@ const MyIntegration = () => {
     <div className="relative w-full min-h-[65vh] overflow-hidden bg-[#4F46E5] flex items-center justify-center">
       {/* Background GIF */}
       <img 
-        src="/src/assets/myGif.gif" 
+        src="/public/myGif.gif" 
         className="absolute inset-0 w-full h-full object-cover"
         alt="Background Animation"
       />
 
       {/* Background Image */}
       <img 
-        src="/src/assets/columns.png" 
+        src="/public/columns.png" 
         className="absolute inset-0 w-full h-full object-cover"
         alt="Background Overlay"
       />
@@ -24,7 +24,7 @@ const MyIntegration = () => {
       <div className="relative flex items-center justify-center text-white space-x-8">
         {/* Frame Image */}
         <img 
-          src="src/assets/frame.png" 
+          src="/public/frame.png" 
           className="w-full max-w-xl h-auto"
           alt="Frame"
         />
