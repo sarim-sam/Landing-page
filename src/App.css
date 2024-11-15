@@ -5,17 +5,6 @@
 @import url("./assets/css/inputs.css");
 @import url("./assets/css/shadows.css");
 @import url("./assets/css/editor.css");
-/* @font-face {
-  font-family: 'Poppins-bold';
-  src: url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Poppins-semibold';
-  src: url('./assets/fonts/Poppins-SemiBold.ttf') format('truetype');
-  font-style: normal;
-} */
 @font-face {
   font-family: 'Poppins-normal';
   src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
@@ -135,22 +124,6 @@
   font-weight: 900;
   font-style: italic;
 }
-
-/* INTER */
-.inter-bold {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.inter-regular {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-/* INTER END */
 .outline-none {
   outline: none !important;
 }
@@ -162,6 +135,9 @@ button:disabled {
 }
 html {
   font-size: 16px;
+}
+.font-inter {
+  font-size: 18px;
 }
 * {
   margin: 0;
@@ -437,65 +413,6 @@ input {
 .modal-body{
   z-index: 5999;
 }
-
-
-/* ANIMATIONS */
-/* @keyframes slideLeft {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideRight {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.slide-left {
-  animation: slideLeft 0.5s ease-in-out forwards;
-}
-
-.slide-right {
-  animation: slideRight 0.5s ease-in-out forwards;
-} */
-
-
-/* CSS Animations */
-/* Sliding Animation */
-/* @keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.slide-next {
-  animation: slideInLeft 0.5s ease-in-out;
-}
-
-.slide-prev {
-  animation: slideInRight 0.5s ease-in-out;
-} */
-
-
 /* Define animations for sliding left and right */
 @keyframes slideLeft {
   from {

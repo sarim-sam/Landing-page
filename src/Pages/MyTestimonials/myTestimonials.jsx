@@ -5,7 +5,6 @@ import arrowLeft from '@iconify-icons/mdi/arrow-left';
 import arrowRight from '@iconify-icons/mdi/arrow-right';
 import { testimonials } from '../../data/data.js';
 
-
 // FRONTEND
 // TestimonialCard.
 const TestimonialCard = ({ name, title, image, icon, quote }) => {
@@ -31,7 +30,6 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
 // Testimonials.
 export const Testimonials = ({ startIndex, direction }) => {
   const visibleTestimonials = testimonials.slice(startIndex, startIndex + 3);
-
   return (
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {visibleTestimonials.map((testimonial, index) => (
@@ -47,21 +45,18 @@ export const Testimonials = ({ startIndex, direction }) => {
 const MyTestimonials = () => {
   const [startIndex, setStartIndex] = useState(0);
   const [direction, setDirection] = useState('');
-
   const handleNext = () => {
     if (startIndex + 3 < testimonials.length) {
       setDirection('slide-next');
       setStartIndex(startIndex + 1);
     }
   };
-
   const handlePrev = () => {
     if (startIndex > 0) {
       setDirection('slide-prev');
       setStartIndex(startIndex - 1);
     }
   };
-
   return (
     <div
       className="relative w-full min-h-[65vh] bg-[#FFFFFF] mx-auto overflow-hidden flex flex-col items-start justify-start px-4 py-8 sm:px-8 md:px-12"
