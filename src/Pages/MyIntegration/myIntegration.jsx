@@ -15,7 +15,7 @@ const MyIntegration = () => {
 
       {/* Background Image */}
       <img 
-        src="/public/columns.png" 
+        src="/columns.png" 
         className="absolute inset-0 w-full h-full object-cover"
         alt="Background Overlay"
       />
@@ -24,7 +24,7 @@ const MyIntegration = () => {
       <div className="relative flex items-center justify-center text-white space-x-8">
         {/* Frame Image */}
         <img 
-          src="/public/frame.png" 
+          src="/frame.png" 
           className="w-full max-w-xl h-auto"
           alt="Frame"
         />

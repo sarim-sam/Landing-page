@@ -61,7 +61,7 @@ const MyTestimonials = () => {
     <div
       className="relative w-full min-h-[65vh] bg-[#FFFFFF] mx-auto overflow-hidden flex flex-col items-start justify-start px-4 py-8 sm:px-8 md:px-12 xs:px-12 ls:px-12 ms:px-12 mt-14"
       style={{
-        backgroundImage: "url('/src/assets/myGroup.png')",
+        backgroundImage: "url('/myGroup.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

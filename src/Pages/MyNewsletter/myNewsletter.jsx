@@ -9,7 +9,7 @@ const MyNewsletter = () => {
     <div className="relative w-full min-h-[35vh] overflow-hidden bg-[#4F46E5] flex flex-col items-center justify-center">
     {/* Background GIF */}
       <img 
-        src="/src/assets/myGif.gif" 
+        src="/myGif.gif" 
         className="absolute inset-0 w-full h-full object-cover"
         alt="Background Animation"
       />
