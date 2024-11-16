@@ -68,7 +68,7 @@ const MyTestimonials = () => {
       }}
     >
     <div className="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col ls:flex-col ms:flex-col items-center justify-center w-full mx-2 sm:mx-4 mb-8">
-      <p className="poppins-bold 2xl:text-5xl xl:text-5xl lg:text-4xl lg:text-center lg:mr-12 md:text-3xl md:text-center sm:text-3xl sm:text-center xs:text-3xl xs:text-center ls:text-3xl ls:text-center ms:text-3xl ms:text-center mb-4 md:mb-6 sm:mb-8 lg:mb-0">
+      <p className="poppins-bold text-center 2xl:text-5xl xl:text-5xl lg:text-4xl lg:mr-12 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl mb-4 md:mb-6 sm:mb-8 lg:mb-0">
         What Our Client Said about us
       </p>
       <div className="flex gap-6 justify-center">
