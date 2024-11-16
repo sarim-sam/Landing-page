@@ -52,27 +52,27 @@ const MyFooter = () => {
         
         {/* Social Icons */}
         <div className="flex space-x-4 mt-14 justify-center mb-4">
-          <div className="2xl:w-14 2xl:h-14 xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10 flex items-center justify-center border-2 border-white rounded-full">
-            <a href="#" className="hover:underline poppins-regular text-white hover:decoration-white hover:decoration-4 hover:underline-offset-4 transition-all duration-300">
-              <FaFacebookF className="2xl:w-8 2xl:h-8 xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-6 md:h-6 text-white" />
-            </a>
-          </div>
-          <div className="2xl:w-14 2xl:h-14 xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10 flex items-center justify-center border-2 border-white rounded-full">
-            <a href="#" className="hover:underline poppins-regular text-white hover:decoration-white hover:decoration-4 hover:underline-offset-4 transition-all duration-300">
-              <FaInstagram className="2xl:w-8 2xl:h-8 xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-6 md:h-6 text-white" />
-            </a>
-          </div>
-          <div className="2xl:w-14 2xl:h-14 xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10 flex items-center justify-center border-2 border-white rounded-full">
-            <a href="#" className="hover:underline poppins-regular text-white hover:decoration-white hover:decoration-4 hover:underline-offset-4 transition-all duration-300">
-              <FaTwitter className="2xl:w-8 2xl:h-8 xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-6 md:h-6 text-white" />
-            </a>
-          </div>
-          <div className="2xl:w-14 2xl:h-14 xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10 flex items-center justify-center border-2 border-white rounded-full">
-            <a href="#" className="hover:underline poppins-regular text-white hover:decoration-white hover:decoration-4 hover:underline-offset-4 transition-all duration-300">
-              <FaLinkedinIn className="2xl:w-8 2xl:h-8 xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-6 md:h-6 text-white" />
-            </a>
-          </div>
-        </div>
+  <div className="2xl:w-14 2xl:h-14 xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-12 md:h-12 sm:w-12 sm:h-12 xs:w-12 xs:h-12 ls:w-12 ls:h-12 ms:w-12 ms:h-12 flex items-center justify-center border-2 border-white rounded-full transform transition-transform duration-300 hover:scale-110 active:scale-95">
+    <a href="#" className="hover:underline poppins-regular text-white hover:decoration-white hover:decoration-4 hover:underline-offset-4 transition-all duration-300">
+      <FaFacebookF className="2xl:w-8 2xl:h-8 xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-8 md:h-8 sm:w-8 sm:h-8 xs:w-8 xs:h-8 ls:w-8 ls:h-8 ms:w-8 ms:h-8 text-white" />
+    </a>
+  </div>
+  <div className="2xl:w-14 2xl:h-14 xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-12 md:h-12 sm:w-12 sm:h-12 xs:w-12 xs:h-12 ls:w-12 ls:h-12 ms:w-12 ms:h-12 flex items-center justify-center border-2 border-white rounded-full transform transition-transform duration-300 hover:scale-110 active:scale-95">
+    <a href="#" className="hover:underline poppins-regular text-white hover:decoration-white hover:decoration-4 hover:underline-offset-4 transition-all duration-300">
+      <FaInstagram className="2xl:w-8 2xl:h-8 xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-8 md:h-8 sm:w-8 sm:h-8 xs:w-8 xs:h-8 ls:w-8 ls:h-8 ms:w-8 ms:h-8 text-white" />
+    </a>
+  </div>
+  <div className="2xl:w-14 2xl:h-14 xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-12 md:h-12 sm:w-12 sm:h-12 xs:w-12 xs:h-12 ls:w-12 ls:h-12 ms:w-12 ms:h-12 flex items-center justify-center border-2 border-white rounded-full transform transition-transform duration-300 hover:scale-110 active:scale-95">
+    <a href="#" className="hover:underline poppins-regular text-white hover:decoration-white hover:decoration-4 hover:underline-offset-4 transition-all duration-300">
+      <FaTwitter className="2xl:w-8 2xl:h-8 xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-8 md:h-8 sm:w-8 sm:h-8 xs:w-8 xs:h-8 ls:w-8 ls:h-8 ms:w-8 ms:h-8 text-white" />
+    </a>
+  </div>
+  <div className="2xl:w-14 2xl:h-14 xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-12 md:h-12 sm:w-12 sm:h-12 xs:w-12 xs:h-12 ls:w-12 ls:h-12 ms:w-12 ms:h-12 flex items-center justify-center border-2 border-white rounded-full transform transition-transform duration-300 hover:scale-110 active:scale-95">
+    <a href="#" className="hover:underline poppins-regular text-white hover:decoration-white hover:decoration-4 hover:underline-offset-4 transition-all duration-300">
+      <FaLinkedinIn className="2xl:w-8 2xl:h-8 xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-8 md:h-8 sm:w-8 sm:h-8 xs:w-8 xs:h-8 ls:w-8 ls:h-8 ms:w-8 ms:h-8 text-white" />
+    </a>
+  </div>
+</div>
       </div>
     </div>
   );
