@@ -8,7 +8,7 @@ const MyIntegration = () => {
     <div className="relative w-full min-h-[65vh] overflow-hidden bg-[#4F46E5] flex items-center justify-center">
       {/* Background GIF */}
       <img 
-        src="/public/myGif.gif" 
+        src="/myGif.gif" 
         className="absolute inset-0 w-full h-full object-cover"
         alt="Background Animation"
       />
