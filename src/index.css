@@ -5,6 +5,15 @@
 @import url("./assets/css/inputs.css");
 @import url("./assets/css/shadows.css");
 @import url("./assets/css/editor.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+/* FONTS */
+.text-40 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+
+/* FONTS END */
 @font-face {
   font-family: 'Poppins-normal';
   src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');

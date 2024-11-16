@@ -10,9 +10,9 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => (
     className="cursor-pointer bg-white p-10 rounded-xl shadow-md mb-8"
   >
     <div className="flex justify-between items-center">
-      <p className="poppins-semibold 2xl:text-xl xl:text-xl lg:text-lg md:text-lg sm:text-lg xs:text-lg ls:text-md ms:text-sm text-gray-800">{question}</p>
+      <p className="poppins-semibold 2xl:text-16 xl:text-16 lg:text-16 md:text-16 sm:text-16 xs:text-16 ls:text-16 ms:text-16 text-gray-800">{question}</p>
       <span
-        className={`flex items-center poppins-semibold justify-center 2xl:w-12 2xl:h-12 xl:w-12 xl:h-12 lg:w-12 lg:h-12 md:w-12 md:h-12 sm:w-12 sm:h-12 xs:h-10 xs:w-10 ls:w-8 ls:h-8 ms:w-8 ms:h-8 rounded-full border-2 ${
+        className={`flex items-center poppins-semibold justify-center 2xl:w-7 2xl:h-7 xl:w-12 xl:h-12 lg:w-12 lg:h-12 md:w-12 md:h-12 sm:w-12 sm:h-12 xs:h-10 xs:w-10 ls:w-8 ls:h-8 ms:w-8 ms:h-8 rounded-full border-2 ${
           isOpen ? 'border-[#684fff]' : 'border-black'
         }`}
       >
@@ -23,7 +23,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => (
         )}
       </span>
     </div>
-    {isOpen && <p className="mt-6 text-gray-600">{answer}</p>}
+    {isOpen && <p className="mt-6 text-gray-600 text-14">{answer}</p>}
   </div>
 );
 
@@ -56,10 +56,10 @@ const MyQuestions = () => {
 
       {/* FAQ Content */}
       <div className="max-w-3xl w-full">
-        <p className="poppins-bold text-center 2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl text-gray-900 mb-6">
+        <p className="poppins-bold text-center 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl text-gray-900 mb-6">
           Frequently
         </p>
-        <p className="poppins-bold text-center 2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl text-gray-900 mb-12">
+        <p className="poppins-bold text-center 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl text-gray-900 mb-12">
           Asked Questions
         </p>
         <div className="space-y-8">

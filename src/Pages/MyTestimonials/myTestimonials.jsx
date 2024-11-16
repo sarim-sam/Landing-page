@@ -18,11 +18,11 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
           </div>
         </div>
         <div>
-          <p className="text-xl poppins-semibold text-black">{name}</p>
-          <p className="text-base poppins-medium text-black">{title}</p>
+          <p className="text-28 poppins-semibold text-black">{name}</p>
+          <p className="text-16-1 poppins-medium text-black">{title}</p>
         </div>
       </div>
-      <p className="text-base text-gray-700 poppins-regular">{quote}</p>
+      <p className="text-16-2 text-gray-700 poppins-regular">{quote}</p>
     </div>
   );
 };
@@ -67,25 +67,28 @@ const MyTestimonials = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-    <div className="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col ls:flex-col ms:flex-col items-center justify-center w-full mx-2 sm:mx-4 mb-8">
-      <p className="poppins-bold text-center 2xl:text-5xl xl:text-5xl lg:text-4xl lg:mr-12 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl mb-4 md:mb-6 sm:mb-8 lg:mb-0">
-        What Our Client Said about us
-      </p>
-      <div className="flex gap-6 justify-center">
-      <button
+<div className="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full mx-2 sm:mx-4 mb-8">
+  {/* Heading */}
+  <p className="poppins-bold lg:text-left text-center lg:w-1/2 w-full 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl  ms:text-3xl  mb-4 md:mb-6 sm:mb-8 lg:mb-0">
+    What Our Client Said about us
+  </p>
+
+  {/* Navigation Buttons */}
+  <div className="flex gap-6 justify-center lg:justify-end lg:w-1/2 w-full">
+    <button
       onClick={handlePrev}
-      className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-14 sm:h-14 xs:w-12 xs:h-12 ls:w-10 ls:h-10 ms:w-10 ms:h-10 rounded-full bg-[#f8f9ff] hover:bg-[#e0e4ff] flex items-center justify-center"
-      >
-        <Icon icon={arrowLeft} width="40" height="40" className="text-[#836fff]" />
-      </button>
-      <button
+      className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-14 sm:h-14 xs:w-12 xs:h-12 rounded-full bg-[#f8f9ff] hover:bg-[#e0e4ff] flex items-center justify-center"
+    >
+      <Icon icon={arrowLeft} width="40" height="40" className="text-[#836fff]" />
+    </button>
+    <button
       onClick={handleNext}
-      className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-14 sm:h-14 xs:w-12 xs:h-12 ls:w-10 ls:h-10 ms:w-10 ms:h-10 rounded-full bg-[#684fff] hover:bg-[#836fff] flex items-center justify-center"
-      >
-        <Icon icon={arrowRight} width="40" height="40" className="text-[#ffffff]" />
-      </button>
-      </div>
-    </div>
+      className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-14 sm:h-14 xs:w-12 xs:h-12 rounded-full bg-[#684fff] hover:bg-[#836fff] flex items-center justify-center"
+    >
+      <Icon icon={arrowRight} width="40" height="40" className="text-[#ffffff]" />
+    </button>
+  </div>
+</div>
 
       {/* Testimonials */}
       <Testimonials startIndex={startIndex} direction={direction} />
