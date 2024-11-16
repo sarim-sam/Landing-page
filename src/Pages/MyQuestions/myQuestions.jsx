@@ -40,7 +40,7 @@ const MyQuestions = () => {
       <img
         src="/pattern-left.png"
         alt="background-shape"
-        className="absolute top-0 left-2     2xl:w-40 xl:w-40 lg:w-32 md:w-24 sm:w-20 xs:w-16 ls:w-16 ms:w-16 pointer-events-none z-0"
+        className="absolute top-0 left-2     2xl:w-36 xl:w-36 lg:w-32 md:w-24 sm:w-20 xs:w-16 ls:w-16 ms:w-16 pointer-events-none z-0"
       />
       <img
         src="/pattern-right.png"
