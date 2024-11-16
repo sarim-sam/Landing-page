@@ -35,8 +35,10 @@ const MyIntegration = () => {
           <p className="2xl:text-40 xl:text-40 lg:text-40 md:text-40 sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl poppins-bold mb-4">
             favourite apps
           </p>
-          <p className="text-base mb-8 poppins-regular">
+          <p className="text-base poppins-regular">
             Lorem ipsum dolor sit amet consectetur. Tortor sed aliquam sed id
+          </p>
+          <p className="text-base mb-8 poppins-regular">
             enim donec pharetra. Sit a quam sed ante nisl eget mauris amet.
           </p>
           <button className="bg-white text-[#684fff] px-9 py-5 rounded-full font-semibold hover:bg-[#684fff] hover:text-white hover:scale-105 transition-all duration-300">
