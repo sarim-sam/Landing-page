@@ -30,7 +30,7 @@ const MyNewsletter = () => {
           className="w-full min-h-20 px-6 py-4 rounded-full text-[#6b7280] focus:outline-none focus:ring-2 focus:ring-purple-400"
         />
         <button 
-          className="absolute min-h-16 poppins-medium right-2 top-1/2 -translate-y-1/2 bg-[#684fff] text-white px-7 py-3 rounded-full flex items-center gap-2 transition-colors"
+          className="absolute min-h-16 poppins-medium right-2 top-1/2 -translate-y-1/2 bg-[#684fff] text-white px-7 py-3 rounded-full flex items-center gap-2 hover:bg-white hover:text-[#684fff] hover:scale-105 transition-all duration-300"
         >
           <Send className="h-4 w-4" />
           Subscribe
