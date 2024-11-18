@@ -13,7 +13,7 @@ const MyIntegration = () => {
 
       {/* Background Image */}
       <img 
-        src="/columns.png" 
+        src="/columnss.png" 
         className="absolute inset-0 w-full h-full object-cover"
         alt="Background Overlay"
       />
