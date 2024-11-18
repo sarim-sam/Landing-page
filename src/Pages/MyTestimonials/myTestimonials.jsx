@@ -68,7 +68,11 @@ const MyTestimonials = () => {
       zIndex: 0, 
     }}
   ></div>
-  
+
+<div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block'>
+  <img src="/decorator-first.png"  className='absolute left-1/2 transform -translate-x-1/2'/>
+  <img src="/decorator-second.png" className='absolute bottom-[-8rem] left-1/2 transform -translate-x-1/2'/>
+  </div>
 
 <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full mx-2 sm:mx-4 mb-8">
   {/* Heading */}
@@ -103,8 +107,10 @@ const MyTestimonials = () => {
   </div>
 </div>
 
+
       {/* Testimonials */}
       <Testimonials startIndex={startIndex} direction={direction} />
+      
     </div>
   );
 };
