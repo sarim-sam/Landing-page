@@ -16,7 +16,7 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
           </div>
         </div>
         <div>
-          <p className="text-28 poppins-semibold text-black">{name}</p>
+          <p className="text-28 poppins-semibold text-black mb-2">{name}</p>
           <p className="text-16-1 poppins-medium text-black">{title}</p>
         </div>
       </div>
