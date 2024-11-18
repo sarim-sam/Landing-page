@@ -10,7 +10,7 @@ const MyWorkflow = () => {
       <p className="2xl:text-40 xl:text-40 lg:text-40 md:text-40 sm:text-40 xs:text-40 ls:text-40 ms:text-40 poppins-bold text-center text-gray-900 mb-4 mx-8">Powered Solutions</p>
     </div>
       
-      <p className="2xl:text-16-5 xl:text-16-5 lg:text-16-5 md:text-16-5 sm:text-16-5 xs:text-16-5 ls:text-16-5 ms:text-16-5 text-center text-gray-700 font-inter inter-r max-w-4xl">
+      <p className="2xl:text-16-5 xl:text-16-5 lg:text-16-5 md:text-16-5 sm:text-16-5 xs:text-16-5 ls:text-16-5 ms:text-16-5 text-center text-gray-700 font-inter inter-r max-w-4xl mb-12">
         "Revolutionize your campaigns with seamless AI automation. Manage, optimize, and scale with our
         smart platform that ensures every email reaches its target, increases engagement, and drives results.
         Take control of your campaigns with powerful analytics and insights from one central hub."
