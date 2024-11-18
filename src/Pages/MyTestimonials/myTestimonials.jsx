@@ -81,7 +81,7 @@ const MyTestimonials = () => {
   {/* LEFT BUTTON */}
     <button
       onClick={handlePrev}
-      className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-14 sm:h-14 xs:w-12 xs:h-12 rounded-full bg-[#f8f9ff] hover:bg-[#e0e4ff] flex items-center justify-center transform transition-transform duration-300 hover:scale-110 active:scale-95"
+      className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-16 sm:h-16 xs:w-16 xs:h-16 ls:w-16 ls:h-16 ms:w-16 ms:h-16 rounded-full bg-[#f8f9ff] hover:bg-[#e0e4ff] flex items-center justify-center transform transition-transform duration-300 hover:scale-110 active:scale-95"
     >
       <svg width="86" height="85" viewBox="0 0 86 85" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="0.5" width="85" height="85" rx="42.5" fill="#F8F9FF"/>
@@ -92,7 +92,7 @@ const MyTestimonials = () => {
   {/* RIGHT BUTTON */}
     <button
       onClick={handleNext}
-      className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-14 sm:h-14 xs:w-12 xs:h-12 rounded-full bg-[#684fff] hover:bg-[#836fff] flex items-center justify-center transform transition-transform duration-300 hover:scale-110 active:scale-95"
+      className="w-20 h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-16 sm:h-16 xs:w-16 xs:h-16 ls:w-16 ls:h-16 ms:w-16 ms:h-16 rounded-full bg-[#684fff] hover:bg-[#836fff] flex items-center justify-center transform transition-transform duration-300 hover:scale-110 active:scale-95"
     >
       <svg width="86" height="85" viewBox="0 0 86 85" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="1" y="0.5" width="84" height="84" rx="42" fill="#684FFF"/>
