@@ -1,7 +1,6 @@
 // IMPORTS
 import React, { useState } from 'react';
 import { faqs } from '../../data/data.js';
-import { FiArrowDownRight, FiArrowUpRight } from 'react-icons/fi';
 
 // COMPONENTS
 const FAQItem = ({ question, answer, isOpen, onClick }) => (
@@ -48,17 +47,17 @@ const MyQuestions = () => {
       <img
         src="/pattern-left.png"
         alt="background-shape"
-        className="absolute top-0 left-2     2xl:w-36 xl:w-36 lg:w-32 md:w-24 sm:w-20 xs:w-16 ls:w-16 ms:w-16 pointer-events-none z-0"
+        className="absolute top-0 left-2      2xl:w-36 xl:w-36 lg:w-32 md:w-24 sm:w-20 xs:w-16 ls:w-16 ms:w-16 pointer-events-none z-0"
       />
       <img
         src="/pattern-right.png"
         alt="background-shape"
-        className="absolute top-40 right-1   2xl:w-48 xl:w-48 lg:w-32 md:w-32 sm:w-28 xs:w-16 ls:w-16 ms:w-16 sm:top-0 xs:top-0 ls:top-0 ms:top-0 pointer-events-none z-0"
+        className="absolute top-18 right-1 2xl:w-48 xl:w-48 lg:w-32 md:w-32 sm:w-28 xs:w-16 ls:w-16 ms:w-16  pointer-events-none z-0"
       />
       <img
         src="/pattern-center.png"
         alt="background-shape"
-        className="absolute bottom-6 left-64 2xl:w-48 xl:w-48 lg:w-32 md:w-32 sm:w-28 xs:w-16 ls:w-16 ms:w-16 pointer-events-none z-0"
+        className="absolute bottom-32 left-64 2xl:w-48 xl:w-48 lg:w-32 md:w-32 sm:w-28 xs:w-16 ls:w-16 ms:w-16 pointer-events-none z-0"
       />
 
 

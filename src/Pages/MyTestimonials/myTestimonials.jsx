@@ -7,7 +7,7 @@ import { testimonials } from '../../data/data.js';
 // TestimonialCard.
 const TestimonialCard = ({ name, title, image, icon, quote }) => {
   return (
-    <div className="max-w-md p-8 rounded-xl shadow-lg bg-white relative">
+    <div className="max-w-md p-8 m-6rounded-xl shadow-lg bg-white relative">
       <div className="flex items-center gap-4 mb-4 relative">
         <div className="relative">
           <img src={image} alt={`${name}`} className="w-16 h-16 rounded-full" />
@@ -58,16 +58,11 @@ const MyTestimonials = () => {
   return (
     <div
       className="relative w-full min-h-[65vh] bg-[#FFFFFF] mx-auto overflow-hidden flex flex-col items-start justify-start px-4 py-8 sm:px-4 md:px-8 xs:px-12 ls:px-12 ms:px-12 mt-14">
-<div
-    className="absolute inset-0 md:top-5"
-    style={{
-      backgroundImage: "url('/myGroup.png')",
-      backgroundSize: "cover",
-      backgroundPosition: "center", 
-      backgroundRepeat: "no-repeat",
-      zIndex: 0, 
-    }}
-  ></div>
+    <img
+      src="/myGroup.png"
+      alt="Background"
+      className="absolute inset-0 z-0 w-full object-cover max-h-[550px] hidden sm:hidden md:block"
+    />
 
 <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block'>
   <img src="/decorator-first.png"  className='absolute left-1/2 transform -translate-x-1/2'/>
@@ -81,7 +76,7 @@ const MyTestimonials = () => {
   </p>
 
   {/* Navigation Buttons */}
-  <div className="flex gap-6 justify-center lg:justify-end lg:w-1/2 w-full">
+  <div className="flex gap-6 justify-center lg:w-1/2 w-full">
   {/* LEFT BUTTON */}
     <button
       onClick={handlePrev}
@@ -109,6 +104,7 @@ const MyTestimonials = () => {
 
 
       {/* Testimonials */}
+      
       <Testimonials startIndex={startIndex} direction={direction} />
       
     </div>
