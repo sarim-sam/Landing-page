@@ -7,7 +7,7 @@ import { testimonials } from '../../data/data.js';
 // TestimonialCard.
 const TestimonialCard = ({ name, title, image, icon, quote }) => {
   return (
-    <div className="max-w-md p-8 rounded-lg shadow-lg bg-white relative">
+    <div className="max-w-md p-8 rounded-xl shadow-lg bg-white relative">
       <div className="flex items-center gap-4 mb-4 relative">
         <div className="relative">
           <img src={image} alt={`${name}`} className="w-16 h-16 rounded-full" />
@@ -57,14 +57,19 @@ const MyTestimonials = () => {
   };
   return (
     <div
-      className="relative w-full min-h-[65vh] bg-[#FFFFFF] mx-auto overflow-hidden flex flex-col items-start justify-start px-4 py-8 sm:px-8 md:px-12 xs:px-12 ls:px-12 ms:px-12 mt-14"
-      style={{
-        backgroundImage: "url('/myGroup.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+      className="relative w-full min-h-[65vh] bg-[#FFFFFF] mx-auto overflow-hidden flex flex-col items-start justify-start px-4 py-8 sm:px-4 md:px-8 xs:px-12 ls:px-12 ms:px-12 mt-14">
+<div
+    className="absolute inset-0 md:top-5"
+    style={{
+      backgroundImage: "url('/myGroup.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center", 
+      backgroundRepeat: "no-repeat",
+      zIndex: 0, 
+    }}
+  ></div>
+  
+
 <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full mx-2 sm:mx-4 mb-8">
   {/* Heading */}
   <p className="poppins-bold lg:text-left text-center w-full 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl  ms:text-3xl  mb-4 md:mb-6 sm:mb-8 lg:mb-0">

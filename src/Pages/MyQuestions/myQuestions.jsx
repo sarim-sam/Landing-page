@@ -18,19 +18,16 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => (
       >
         {isOpen ? (
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M27 14C27 6.8203 21.1797 1 14 1C6.8203 1 1 6.8203 1 14C1 21.1797 6.8203 27 14 27C21.1797 27 27 21.1797 27 14Z" stroke="#684FFF" strokeWidth="2" strokeMiterlimit="10"/>
-<path d="M9.84082 18.1741L18.1847 9.8513" stroke="#684FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M9.85138 9.84074L18.1847 9.8513L18.1741 18.1846" stroke="#684FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-</svg>
-
-
+            <path d="M27 14C27 6.8203 21.1797 1 14 1C6.8203 1 1 6.8203 1 14C1 21.1797 6.8203 27 14 27C21.1797 27 27 21.1797 27 14Z" stroke="#684FFF" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M9.84082 18.1741L18.1847 9.8513" stroke="#684FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M9.85138 9.84074L18.1847 9.8513L18.1741 18.1846" stroke="#684FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
         ) : (
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 14C1 21.1797 6.8203 27 14 27C21.1797 27 27 21.1797 27 14C27 6.8203 21.1797 1 14 1C6.8203 1 1 6.8203 1 14Z" stroke="#242536" strokeWidth="2" strokeMiterlimit="10"/>
-<path d="M9.82593 9.8407L18.1487 18.1846" stroke="#242536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M18.1593 9.85126L18.1487 18.1846L9.81537 18.174" stroke="#242536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-</svg>
-
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 14C1 21.1797 6.8203 27 14 27C21.1797 27 27 21.1797 27 14C27 6.8203 21.1797 1 14 1C6.8203 1 1 6.8203 1 14Z" stroke="#242536" strokeWidth="2" strokeMiterlimit="10"/>
+          <path d="M9.82593 9.8407L18.1487 18.1846" stroke="#242536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M18.1593 9.85126L18.1487 18.1846L9.81537 18.174" stroke="#242536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
         )}
       </span>
     </div>
