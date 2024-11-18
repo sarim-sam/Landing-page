@@ -7,7 +7,7 @@ import { testimonials } from '../../data/data.js';
 // TestimonialCard.
 const TestimonialCard = ({ name, title, image, icon, quote }) => {
   return (
-    <div className="max-w-md p-8 rounded-lg shadow-lg bg-white relative mt-14">
+    <div className="max-w-md p-8 rounded-lg shadow-lg bg-white relative">
       <div className="flex items-center gap-4 mb-4 relative">
         <div className="relative">
           <img src={image} alt={`${name}`} className="w-16 h-16 rounded-full" />
