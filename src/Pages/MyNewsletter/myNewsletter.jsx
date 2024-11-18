@@ -1,6 +1,5 @@
 // IMPORTS
 import React from 'react';
-import { Send } from 'lucide-react'
 
 
 // FRONTEND
@@ -29,7 +28,7 @@ const MyNewsletter = () => {
           placeholder="Your email"
           className="w-full min-h-20 px-6 py-4 rounded-full text-[#6b7280] focus:outline-none focus:ring-2 focus:ring-purple-400"
         />
-        <button className='transform transition-transform duration-300 hover:scale-105 active:scale-100'>
+        <button className='transition-transform duration-300 hover:scale-105 active:scale-100'>
           <svg width="159" className='absolute min-h-16 poppins-medium right-2 top-1/2 -translate-y-1/2 bg-[#684fff] text-white px-7 py-3 rounded-full flex items-center gap-2' height="58" viewBox="0 0 159 58" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.547363" width="157.905" height="58" rx="29" fill="#684FFF"/>
             <g 
