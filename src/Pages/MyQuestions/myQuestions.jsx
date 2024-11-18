@@ -13,13 +13,24 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => (
       <p className="poppins-semibold 2xl:text-16 xl:text-16 lg:text-16 md:text-16 sm:text-16 xs:text-16 ls:text-16 ms:text-16 text-gray-800">{question}</p>
       <span
         className={`flex items-center poppins-semibold justify-center 2xl:w-7 2xl:h-7 xl:w-12 xl:h-12 lg:w-12 lg:h-12 md:w-12 md:h-12 sm:w-12 sm:h-12 xs:h-10 xs:w-10 ls:w-8 ls:h-8 ms:w-8 ms:h-8 rounded-full border-2 ${
-          isOpen ? 'border-[#684fff]' : 'border-black'
+          isOpen ? '' : ''
         }`}
       >
         {isOpen ? (
-          <FiArrowUpRight size={28} color="#684fff" />
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27 14C27 6.8203 21.1797 1 14 1C6.8203 1 1 6.8203 1 14C1 21.1797 6.8203 27 14 27C21.1797 27 27 21.1797 27 14Z" stroke="#684FFF" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M9.84082 18.1741L18.1847 9.8513" stroke="#684FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9.85138 9.84074L18.1847 9.8513L18.1741 18.1846" stroke="#684FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+
         ) : (
-          <FiArrowDownRight size={28} color="#2C2C54" />
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 14C1 21.1797 6.8203 27 14 27C21.1797 27 27 21.1797 27 14C27 6.8203 21.1797 1 14 1C6.8203 1 1 6.8203 1 14Z" stroke="#242536" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M9.82593 9.8407L18.1487 18.1846" stroke="#242536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18.1593 9.85126L18.1487 18.1846L9.81537 18.174" stroke="#242536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
         )}
       </span>
     </div>
