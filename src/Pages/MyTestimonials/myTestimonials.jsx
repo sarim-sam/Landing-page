@@ -67,7 +67,7 @@ const MyTestimonials = () => {
     >
 <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center w-full mx-2 sm:mx-4 mb-8">
   {/* Heading */}
-  <p className="poppins-bold lg:text-left text-center lg:w-1/2 w-full 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl  ms:text-3xl  mb-4 md:mb-6 sm:mb-8 lg:mb-0">
+  <p className="poppins-bold lg:text-left text-center w-full 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl  ms:text-3xl  mb-4 md:mb-6 sm:mb-8 lg:mb-0">
     What Our Client Said about us
   </p>
 
