@@ -18,7 +18,7 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
             alt={`${name}`}
             className="w-16 h-16 rounded-full shadow-[0_0_0_2px_#f8f9ff] transition-shadow duration-600 group-hover:shadow-[0_0_0_2px_white]"
           />
-        <div className="absolute -top-16 -right-8 w-16 h-16 rounded-full bg-white flex items-center justify-center transition-colors duration-300 group-hover:bg-black">
+        <div className="absolute -top-16 -right-8 w-16 h-16 rounded-full flex items-center justify-center transition-colors duration-300 group-hover:bg-black">
           <img
             src={icon}
             alt="icon"
@@ -44,15 +44,20 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
 
 
 // Testimonials.
-export const Testimonials = ({ startIndex, direction }) => {
+export const Testimonials = ({ startIndex, direction, animatedIndex }) => {
   const visibleTestimonials = testimonials.slice(startIndex, startIndex + 3);
   return (
-    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {visibleTestimonials.map((testimonial, index) => (
-        <div key={index} className={`testimonial-card ${direction}`}>
-          <TestimonialCard {...testimonial} />
-        </div>
-      ))}
+  <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {visibleTestimonials.map((testimonial, index) => {
+        const animationClass =
+          index + startIndex === animatedIndex ? direction : "";
+
+        return (
+          <div key={index} className={`testimonial-card ${animationClass}`}>
+            <TestimonialCard {...testimonial} />
+          </div>
+        );
+      })}
     </div>
   );
 };
@@ -60,17 +65,22 @@ export const Testimonials = ({ startIndex, direction }) => {
 // MyTestimonials.
 const MyTestimonials = () => {
   const [startIndex, setStartIndex] = useState(0);
+  const [animatedIndex, setAnimatedIndex] = useState(null);
   const [direction, setDirection] = useState('');
   const handleNext = () => {
     if (startIndex + 3 < testimonials.length) {
+      setAnimatedIndex(startIndex + 3);
       setDirection('slide-next');
       setStartIndex(startIndex + 1);
+      setTimeout(() => setAnimatedIndex(null), 500);
     }
   };
   const handlePrev = () => {
     if (startIndex > 0) {
+      setAnimatedIndex(startIndex - 1);
       setDirection('slide-prev');
       setStartIndex(startIndex - 1);
+      setTimeout(() => setAnimatedIndex(null), 500);
     }
   };
   return (
@@ -108,7 +118,7 @@ const MyTestimonials = () => {
 </div>
 
       {/* Testimonials */}
-      <Testimonials startIndex={startIndex} direction={direction} />
+      <Testimonials startIndex={startIndex} direction={direction} animatedIndex={animatedIndex} />
     </div>
   );
 };
