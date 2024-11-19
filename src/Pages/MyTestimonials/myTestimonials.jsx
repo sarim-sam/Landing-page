@@ -10,7 +10,6 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
     <div className="group max-w-md p-8 m-6 rounded-[30px] shadow-lg bg-white relative transform transition-transform duration-300 hover:scale-105 hover:bg-[#684fff] hover:text-white active:scale-110 will-change-transform">
       <div className="flex items-center gap-4 mb-4 relative">
         <div className="relative">
-          {/* Use box-shadow instead of border */}
           <img
             src={image}
             alt={`${name}`}
@@ -73,7 +72,7 @@ const MyTestimonials = () => {
     <img
       src="/myGroup.png"
       alt="Background"
-      className="absolute inset-0 left-5 z-0 w-full max-h-[580px] hidden sm:hidden md:block"
+      className="absolute inset-0 left-5 z-0 max-w[1600px] max-h-[580px] hidden sm:hidden md:block"
     />
 
 <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block'>
