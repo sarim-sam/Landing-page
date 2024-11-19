@@ -81,7 +81,7 @@ const MyTestimonials = () => {
   <img src="/decorator-second.png" className='absolute bottom-[-8rem] left-1/2 transform -translate-x-1/2'/>
   </div>
 
-  <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col xs:flex-col ls:flex-col ms:flex-col items-center justify-around w-full mx-2 sm:mx-4 mb-8 z-10 2xl:-mx-32">
+  <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col xs:flex-col ls:flex-col ms:flex-col items-center justify-around w-full mx-2 sm:mx-4 mb-8 z-10 2xl:-mx-16">
   {/* Heading */}
   <p className="poppins-bold text-center sm:text-left w-full sm:w-auto 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl mb-4 sm:mb-0">
     What Our Client Said about us
