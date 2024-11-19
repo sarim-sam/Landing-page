@@ -7,28 +7,29 @@ import { testimonials } from '../../data/data.js';
 // TestimonialCard.
 const TestimonialCard = ({ name, title, image, icon, quote }) => {
   return (
-    <div className="group max-w-md p-8 m-6 rounded-[30px] shadow-lg bg-white relative transform transition-transform duration-200 hover:scale-105 hover:bg-[#684fff] hover:text-white active:scale-110">
+    <div className="group max-w-md p-8 m-6 rounded-[30px] shadow-lg bg-white relative transform transition-transform duration-600 hover:scale-105 hover:bg-[#684fff] hover:text-white active:scale-110 will-change-transform">
       <div className="flex items-center gap-4 mb-4 relative">
         <div className="relative">
+          {/* Use box-shadow instead of border */}
           <img
             src={image}
             alt={`${name}`}
-            className="w-16 h-16 rounded-full border-2 border-[#f8f9ff] transition-colors duration-200 group-hover:border-white"
+            className="w-16 h-16 rounded-full shadow-[0_0_0_2px_#f8f9ff] transition-shadow duration-600 group-hover:shadow-[0_0_0_2px_white]"
           />
           <div className="absolute -top-16 -right-8 w-16 h-16 rounded-full flex items-center justify-center">
             <img src={icon} alt="icon" className="w-14 h-14" />
           </div>
         </div>
         <div>
-          <p className="text-28 md:text-28md sm:text-28sm xs:text-28sm ls:text-28sm ms:text-28sm poppins-semibold mb-2 transition-colors duration-200 group-hover:text-white">
+          <p className="text-28 md:text-28md sm:text-28sm xs:text-28sm ls:text-28sm ms:text-28sm poppins-semibold mb-2 transition-colors duration-600 group-hover:text-white">
             {name}
           </p>
-          <p className="text-16-1 poppins-medium transition-colors duration-200 group-hover:text-white">
+          <p className="text-16-1 poppins-medium transition-colors duration-600 group-hover:text-white">
             {title}
           </p>
         </div>
       </div>
-      <p className="text-16-2 text-gray-700 poppins-regular transition-colors duration-200 group-hover:text-white">
+      <p className="text-16-2 text-gray-700 poppins-regular transition-colors duration-600 group-hover:text-white">
         {quote}
       </p>
     </div>
