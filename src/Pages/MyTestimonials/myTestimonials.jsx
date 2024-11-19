@@ -72,7 +72,7 @@ const MyTestimonials = () => {
     <img
       src="/myGroup.png"
       alt="Background"
-      className="absolute inset-0 left-5 z-0 max-w[1600px] -full max-h-[580px] hidden sm:hidden md:block"
+      className="absolute inset-0 left-5 z-0 max-w-full max-h-[580px] hidden sm:hidden md:block"
     />
 
 <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block'>
