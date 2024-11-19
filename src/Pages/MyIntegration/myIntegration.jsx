@@ -15,7 +15,7 @@ const MyIntegration = () => {
 
       {/* Background Image */}
       <img 
-        src="/column-sarim.png" 
+        src="/column.png" 
         className="absolute inset-0 w-full h-full object-cover"
         alt="Background Overlay"
       />
