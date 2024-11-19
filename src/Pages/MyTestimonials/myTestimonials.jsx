@@ -7,7 +7,7 @@ import { testimonials } from '../../data/data.js';
 // TestimonialCard.
 const TestimonialCard = ({ name, title, image, icon, quote }) => {
   return (
-    <div className="group max-w-md p-8 m-6 rounded-[30px] shadow-lg bg-white relative transform transition-transform duration-600 hover:scale-105 hover:bg-[#684fff] hover:text-white active:scale-110 will-change-transform">
+    <div className="group max-w-md p-8 m-6 rounded-[30px] shadow-lg bg-white relative transform transition-transform duration-300 hover:scale-105 hover:bg-[#684fff] hover:text-white active:scale-110 will-change-transform">
       <div className="flex items-center gap-4 mb-4 relative">
         <div className="relative">
           {/* Use box-shadow instead of border */}
