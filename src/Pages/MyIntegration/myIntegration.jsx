@@ -34,10 +34,10 @@ const MyIntegration = () => {
           <p className="sxl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl poppins-bold mb-4">
             Integrated with your favourite apps
           </p>
-          <p className="sxl:text-16-2 lg:text-16-2 md:text-16-2 sm:text-16-2 xs:text-16-2 ls:text-16-2 ms:text-16-2 poppins-regular">
+          <p className="poppins-regular">
             Lorem ipsum dolor sit amet consectetur. Tortor sed aliquam sed id 
           </p>
-          <p className="sxl:text-16-2 lg:text-16-2 md:text-16-2 sm:text-16-2 xs:text-16-2 ls:text-16-2 ms:text-16-2 poppins-regular mb-8">
+          <p className="poppins-regular mb-8">
             enim donec pharetra. Sit a quam sed ante nisl eget mauris amet.
           </p>
           <button className="bg-white text-12 poppins-semibold text-[#684fff] sxl:px-9 sxl:py-3 lg:px-9 lg:py-3 md:px-7 md:py-4 sm:px-6 sm:py-3 xs:px-6 xs:py-3 ls:px-6 ls:py-3 ms:px-6 ms:py-3 rounded-full hover:bg-[#684fff] hover:text-white hover:scale-105 transition-all duration-300">
