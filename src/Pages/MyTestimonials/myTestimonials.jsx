@@ -44,20 +44,34 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
 
 
 // Testimonials.
-export const Testimonials = ({ startIndex, direction, animatedIndex }) => {
-  const visibleTestimonials = testimonials.slice(startIndex, startIndex + 3);
-  return (
-  <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {visibleTestimonials.map((testimonial, index) => {
-        const animationClass =
-          index + startIndex === animatedIndex ? direction : "";
+export const Testimonials = ({ startIndex, direction }) => {
+  const visibleTestimonials = testimonials;
 
-        return (
-          <div key={index} className={`testimonial-card ${animationClass}`}>
-            <TestimonialCard {...testimonial} />
-          </div>
-        );
-      })}
+  return (
+    <div className="testimonial-wrapper">
+      <div
+        className="testimonial-inner"
+        style={{
+          transform: `translateX(-${startIndex * (529 + 16)}px)`, // Adjust for card width and gap
+        }}
+      >
+        {visibleTestimonials.map((testimonial, index) => {
+          const isCurrent = index === startIndex;
+          const isTransitioning =
+            index === startIndex - 1 || index === startIndex + 1;
+
+          return (
+            <div
+              key={index}
+              className={`testimonial-card ${
+                isCurrent ? "active" : ""
+              } ${isTransitioning ? direction : ""}`}
+            >
+              <TestimonialCard {...testimonial} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
@@ -65,60 +79,83 @@ export const Testimonials = ({ startIndex, direction, animatedIndex }) => {
 // MyTestimonials.
 const MyTestimonials = () => {
   const [startIndex, setStartIndex] = useState(0);
-  const [animatedIndex, setAnimatedIndex] = useState(null);
-  const [direction, setDirection] = useState('');
+  const [direction, setDirection] = useState("");
+
   const handleNext = () => {
-    if (startIndex + 3 < testimonials.length) {
-      setAnimatedIndex(startIndex + 3);
-      setDirection('slide-next');
+    if (startIndex + 2.5 < testimonials.length - 1) {
+      setDirection("slide-next");
       setStartIndex(startIndex + 1);
-      setTimeout(() => setAnimatedIndex(null), 500);
     }
   };
+
   const handlePrev = () => {
     if (startIndex > 0) {
-      setAnimatedIndex(startIndex - 1);
-      setDirection('slide-prev');
+      setDirection("slide-prev");
       setStartIndex(startIndex - 1);
-      setTimeout(() => setAnimatedIndex(null), 500);
     }
   };
+
+
   return (
-    <div
-      className="relative w-full min-h-[637px] bg-[#FFFFFF] overflow-hidden flex flex-col items-start justify-start mt-14">
-    <img
-      src="/myGroup.png"
-      alt="Background"
-      className="absolute inset-0 left-5 z-0 max-w-full sm:max-h-[600px] hidden sm:hidden md:block"
-    />
+    <div className="relative w-full min-h-[637px] bg-[#FFFFFF] overflow-hidden flex flex-col items-start justify-start mt-14">
+      <img
+        src="/myGroup.png"
+        alt="Background"
+        className="absolute inset-0 left-5 z-0 max-w-full sm:max-h-[600px] hidden sm:hidden md:block"
+      />
 
-<div className='sxl:hidden lg:hidden md:hidden sm:block'>
-  <img src="/decorator-first.png"  className='absolute left-1/2 transform -translate-x-1/2'/>
-  <img src="/decorator-second.png" className='absolute bottom-[-8rem] left-1/2 transform -translate-x-1/2'/>
-  </div>
+      <div className="sxl:hidden lg:hidden md:hidden sm:block">
+        <img
+          src="/decorator-first.png"
+          className="absolute left-1/2 transform -translate-x-1/2"
+        />
+        <img
+          src="/decorator-second.png"
+          className="absolute bottom-[-8rem] left-1/2 transform -translate-x-1/2"
+        />
+      </div>
 
-  <div className="flex sxl:h-28 flex-col lg:flex-row md:flex-col sm:flex-col xs:flex-col ls:flex-col ms:flex-col items-center justify-around w-full mx-2 sm:mx-4 mb-8 z-10 2xl:-mx-16">
-  {/* Heading */}
-  <p className="poppins-bold text-center sm:text-left w-full sm:w-auto 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl mb-4 sm:mb-0">
-    What Our Client Said about us
-  </p>
+      <div className="flex sxl:h-28 flex-col lg:flex-row md:flex-col sm:flex-col xs:flex-col ls:flex-col ms:flex-col items-center justify-around w-full mx-2 sm:mx-4 mb-8 z-10 2xl:-mx-16">
+        {/* Heading */}
+        <p className="poppins-bold text-center sm:text-left w-full sm:w-auto 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl mb-4 sm:mb-0">
+          What Our Client Said about us
+        </p>
 
-  {/* Navigation Buttons */}
-  <div className="flex gap-4 sm:gap-6">
-    {/* LEFT BUTTON */}
-    <button onClick={handlePrev} className="2xl:w-20 2xl:h-20 xl:w-20 xl:h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-16 sm:h-16 xs:w-16 xs:h-16 ls:w-16 ls:h-16 ms:w-16 ms:h-16 rounded-full bg-[#F8F9FF] hover:bg-[#f4f4fa] flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
-      <Icon icon={arrowLeft} width="40" height="40" className="text-[#836fff]" />
-    </button>
+        {/* Navigation Buttons */}
+        <div className="flex gap-4 sm:gap-6">
+          {/* LEFT BUTTON */}
+          <button
+            onClick={handlePrev}
+            className="2xl:w-20 2xl:h-20 xl:w-20 xl:h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-16 sm:h-16 xs:w-16 xs:h-16 ls:w-16 ls:h-16 ms:w-16 ms:h-16 rounded-full bg-[#F8F9FF] hover:bg-[#f4f4fa] flex items-center justify-center transform transition-transform duration-300 hover:scale-110"
+          >
+            <Icon
+              icon={arrowLeft}
+              width="40"
+              height="40"
+              className="text-[#836fff]"
+            />
+          </button>
 
-    {/* RIGHT BUTTON */}
-    <button onClick={handleNext} className="2xl:w-20 2xl:h-20 xl:w-20 xl:h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-16 sm:h-16 xs:w-16 xs:h-16 ls:w-16 ls:h-16 ms:w-16 ms:h-16 rounded-full bg-[#684fff] hover:bg-[#836fff] flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
-      <Icon icon={arrowRight} width="40" height="40" className="text-[#ffffff]" />
-    </button>
-  </div>
-</div>
+          {/* RIGHT BUTTON */}
+          <button
+            onClick={handleNext}
+            className="2xl:w-20 2xl:h-20 xl:w-20 xl:h-20 lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-16 sm:h-16 xs:w-16 xs:h-16 ls:w-16 ls:h-16 ms:w-16 ms:h-16 rounded-full bg-[#684fff] hover:bg-[#836fff] flex items-center justify-center transform transition-transform duration-300 hover:scale-110"
+          >
+            <Icon
+              icon={arrowRight}
+              width="40"
+              height="40"
+              className="text-[#ffffff]"
+            />
+          </button>
+        </div>
+      </div>
 
       {/* Testimonials */}
-      <Testimonials startIndex={startIndex} direction={direction} animatedIndex={animatedIndex} />
+      <Testimonials
+        startIndex={startIndex}
+        direction={direction}
+      />
     </div>
   );
 };
