@@ -59,7 +59,6 @@ const MyFooter = () => {
               <li><a href="#" className="sm:mb-8 2xl:text-16-3 xl:text-16-3 lg:text-16-3 md:text-16-3 sm:text-16-3 xs:text16-3 ls:text16-3 ms:text16-3 hover:underline poppins-regular text-white hover:decoration-white hover:decoration-4 hover:underline-offset-4 transition-all duration-300">Login</a></li>
             </ul>
           </div>
-          <a>Sarim</a>
           
           {/* Legal */}
           <div className="lg:border-0 sm:border-b-2 xs:border-b-2 ls:border-b-2 ms:border-b-2 md:border-b-2 sm:border-white sm:pb-4">
