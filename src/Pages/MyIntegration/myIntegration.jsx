@@ -41,7 +41,7 @@ const MyIntegration = () => {
             enim donec pharetra. Sit a quam sed ante nisl eget mauris amet.
           </p>
           <button className="bg-white text-[#684fff] sxl:px-9 sxl:py-3 lg:px-9 lg:py-3 md:px-7 md:py-4 sm:px-6 sm:py-3 xs:px-6 xs:py-3 ls:px-6 ls:py-3 ms:px-6 ms:py-3 rounded-full font-semibold hover:bg-[#684fff] hover:text-white hover:scale-105 transition-all duration-300">
-            Get Startedd
+            Get Started
           </button>
         </div>
       </div>
