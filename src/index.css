@@ -426,7 +426,7 @@ input {
 
 /* SAM */
 /* LEFT RIGHT BUTTONS */
-@keyframes slideLeft {
+/* @keyframes slideLeft {
   from {
     transform: translateX(100%);
     opacity: 0;
@@ -445,10 +445,10 @@ input {
     transform: translateX(0);
     opacity: 1;
   }
-}
+} */
 
 /* FOCUS CENTER */
-.testimonial-card {
+/* .testimonial-card {
   opacity: 1;
   transform: translateX(0);
   transition: none;
@@ -460,19 +460,45 @@ input {
   animation: slideRight 0.6s ease-in;
 }
 .testimonial-card.focus-center {
-  transform: scale(1.35); /* Enlarge the focused card */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Add focus shadow */
-  transition: transform 0.2s ease, box-shadow 2s ease; /* Smooth animation */
-}
-.testimonial-card {
+  transform: scale(1.35); 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.2s ease, box-shadow 2s ease;
+} */
+/* .testimonial-card {
   transform: scale(1);
   z-index: 1;
-}
+} */
 
 /* FOCUS CENTER */
-.testimonial-card.focus-center {
-  transform: scale(1.35); /* Enlarge the focused card */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Add focus shadow */
+/* .testimonial-card.focus-center {
+  transform: scale(1.35); 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
   z-index: 2;
   transition: transform 0.6s ease, box-shadow 0.6s ease;
+}  */
+
+.testimonial-card {
+  animation: slide 0.5s ease-in-out;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.btn-nav {
+  background: #f8f9ff;
+  border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.btn-nav:hover {
+  transform: scale(1.1);
+  background: #684fff;
+  color: #ffffff;
 }
