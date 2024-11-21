@@ -21,7 +21,7 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
         <div className="absolute -top-16 -right-8 w-16 h-16 rounded-full flex items-center justify-center transition-colors duration-300">
             <img
               src={icon}
-              alt="icon"
+              alt="icons"
               className="w-14 h-14 transition-transform duration-300 group-hover:invert group-hover:brightness-0"
             />
           </div>
