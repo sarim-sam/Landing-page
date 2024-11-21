@@ -20,7 +20,7 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
             className="w-16 h-16 rounded-full shadow-[0_0_0_2px_#f8f9ff] transition-shadow duration-600 group-hover:shadow-[0_0_0_2px_white]"
           />
           {/* Icon Image */}
-          <div className="absolute -top-16 left-6 w-16 h-16 flex items-center justify-center rounded-full ransition-transform duration-300 group-hover:bg-[#684fff] group-hover:text-[#f9fafb]">
+          <div className="absolute -top-16 left-6 w-16 h-16 flex items-center border border-transparent justify-center rounded-full ransition-transform duration-300 group-hover:bg-[#684fff]  group-hover:text-[#f9fafb]">
             <img
               src={icon}
               alt="icon"
