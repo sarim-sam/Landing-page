@@ -2,7 +2,7 @@ import React from 'react';
 
 const MyWorkflow = () => {
   return (
-    <div className="min-h-[45vh] flex flex-col items-center justify-center px-4 bg-white">
+    <div className="min-h-[427px] flex flex-col items-center justify-center px-4 bg-white">
     <div className='mt-8'>
       <p className="2xl:text-40 xl:text-40 lg:text-40 md:text-40md sm:text-40md xs:text-40md ls:text-40md ms:text-40md poppins-bold text-center text-gray-900 mx-8">
         Elevate Your Workflow with AI-

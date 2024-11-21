@@ -5,7 +5,7 @@ import React from 'react';
 // FRONTEND
 const MyFooter = () => {
   return (
-    <div className="min-h-[40vh] flex flex-col items-center justify-evenly ms:items-start ms:justify-start px-4 bg-[#684fff]">
+    <div className="min-h-[414px] flex flex-col items-center justify-evenly ms:items-start ms:justify-start px-4 bg-[#684fff]">
       <div className="container ms:mx-0 ms:px-0 ls:mx-auto ls:px-6 ">
         {/* Footer Content in Grid */}
         <div className="grid md:w-full 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-8 sm:gap-16 md:mt-10 sm:mt-10 mb-12">

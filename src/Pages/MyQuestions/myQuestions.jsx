@@ -42,7 +42,7 @@ const MyQuestions = () => {
   };
 
   return (
-    <div className="relative w-full min-h-[65vh] flex items-center justify-center overflow-hidden py-20 px-6 sm:px-8 lg:px-12">
+    <div className="relative w-full min-h-[1024px]  flex items-center justify-center overflow-hidden py-20 px-6 sm:px-8 lg:px-12">
       {/* Background Images */}
       <img
         src="/pattern-left.png"
@@ -63,10 +63,10 @@ const MyQuestions = () => {
 
       {/* FAQ Content */}
       <div className="max-w-3xl w-full">
-        <p className="poppins-bold text-center 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl text-gray-900 mb-6">
-          Frequently
+        <p className="poppins-bold text-center 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl text-gray-900 space-y-12">
+          Frequently 
         </p>
-        <p className="poppins-bold text-center 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl text-gray-900 mb-12">
+        <p className="poppins-bold text-center 2xl:text-40 xl:text-40 lg:text-40 md:text-3xl sm:text-3xl xs:text-3xl ls:text-3xl ms:text-3xl text-gray-900 space-y-12">
           Asked Questions
         </p>
         <div className="space-y-8">

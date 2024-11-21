@@ -5,7 +5,7 @@ import React from 'react';
 // FRONTEND
 const MyNewsletter = () => {
   return (
-    <div className="relative w-full min-h-[40vh] overflow-hidden bg-[#4F46E5] flex flex-col items-center justify-center">
+    <div className="relative w-full min-h-[352px] overflow-hidden bg-[#4F46E5] flex flex-col items-center justify-center">
     {/* Background GIF */}
       <img 
         src="/myGif.gif" 
