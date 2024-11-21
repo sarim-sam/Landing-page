@@ -44,23 +44,28 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
 
 
 // Testimonials.
-export const Testimonials = ({ startIndex, direction }) => {
+export const Testimonials = ({ startIndex, direction, focusedIndex, animateFocus }) => {
   const visibleTestimonials = testimonials.slice(startIndex, startIndex + 3);
 
   return (
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {visibleTestimonials.map((testimonial, index) => (
-        <div
-          key={index}
-          className={`testimonial-card ${direction}`}
-          style={{
-            marginLeft: '12px', // Uniform left margin for all cards
-            marginRight: '12px', // Uniform right margin for all cards
-          }}
-        >
-          <TestimonialCard {...testimonial} />
-        </div>
-      ))}
+      {visibleTestimonials.map((testimonial, index) => {
+        const globalIndex = startIndex + index; // Calculate the global index
+        const isFocused = globalIndex === focusedIndex && animateFocus; // Apply focus only if animateFocus is true
+        return (
+          <div
+            key={index}
+            className={`testimonial-card ${direction} ${
+              isFocused ? 'focus-center' : ''
+            }`}
+            style={{
+              animation: `${direction === 'slide-next' ? 'slideLeft' : 'slideRight'} 0.6s ease-in-out`,
+            }}
+          >
+            <TestimonialCard {...testimonial} />
+          </div>
+        );
+      })}
     </div>
   );
 };
@@ -69,16 +74,32 @@ export const Testimonials = ({ startIndex, direction }) => {
 const MyTestimonials = () => {
   const [startIndex, setStartIndex] = useState(0);
   const [direction, setDirection] = useState('');
+  const [key, setKey] = useState(0);
+  const [focusedIndex, setFocusedIndex] = useState(null);
+  const [animateFocus, setAnimateFocus] = useState(false);
+
   const handleNext = () => {
     if (startIndex + 3 < testimonials.length) {
       setDirection('slide-next');
       setStartIndex(startIndex + 1);
+      setKey((prevKey) => prevKey + 1);
+      setStartIndex((prevIndex) => Math.min(prevIndex + 1, testimonials.length - 3));
+      setFocusedIndex((prevIndex) => prevIndex + 3); // Focus on the newly appearing card
+      // Temporarily set animateFocus to true
+      setAnimateFocus(true);
+      setTimeout(() => setAnimateFocus(false), 700);
     }
   };
   const handlePrev = () => {
     if (startIndex > 0) {
       setDirection('slide-prev');
       setStartIndex(startIndex - 1);
+      setKey((prevKey) => prevKey + 1);
+      setStartIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+      setFocusedIndex((prevIndex) => prevIndex - 1); // Focus on the newly appearing card
+      // Temporarily set animateFocus to true
+      setAnimateFocus(true);
+      setTimeout(() => setAnimateFocus(false), 700);
     }
   };
   return (
@@ -122,7 +143,7 @@ const MyTestimonials = () => {
 </div>
 
       {/* Testimonials */}
-      <Testimonials startIndex={startIndex} direction={direction} />
+      <Testimonials startIndex={startIndex} direction={direction} key={key} focusedIndex={focusedIndex} animateFocus={animateFocus}/>
     </div>
   );
 };
