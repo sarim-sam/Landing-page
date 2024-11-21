@@ -5,12 +5,14 @@ import MyTestimonials from './Pages/MyTestimonials/myTestimonials.jsx';
 import MyNewsletter from './Pages/MyNewsletter/myNewsletter.jsx';
 import MyWorkflow from './Pages/MyWorkflow/myWorkflow.jsx';
 import MyFooter from './Pages/MyFooter/myFooter.jsx';
+import MyCarousel from './Pages/MyCarousel/myCarousel.jsx';
 
 
 
 function App() {
   return (
     <div>
+      <MyCarousel     />
       <MyIntegration  />
       <MyTestimonials />
       <MyQuestions    />

@@ -71,3 +71,4 @@ export const testimonials = [
     quote: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations. Creativity flowed, and the results were beyond my expectations.',
   },
 ];
+
