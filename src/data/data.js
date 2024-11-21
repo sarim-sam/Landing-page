@@ -24,7 +24,7 @@ export const faqs = [
 export const testimonials = [
   {
     id: 1,
-    name: 'Amelia Joseph',
+    name: 'Amelia Joseph 1',
     title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
@@ -32,7 +32,7 @@ export const testimonials = [
   },
   {
     id: 2,
-    name: 'Amelia Joseph',
+    name: 'Amelia Joseph 2',
     title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
