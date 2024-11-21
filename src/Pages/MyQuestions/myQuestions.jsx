@@ -57,7 +57,7 @@ const MyQuestions = () => {
       <img
         src="/pattern-center.png"
         alt="background-shape"
-        className="absolute bottom-32 left-64 2xl:w-48 xl:w-48 lg:w-32 md:w-32 sm:w-28 xs:w-16 ls:w-16 ms:w-16 pointer-events-none z-0"
+        className="absolute bottom-32 left-64 2xl:w-48 xl:w-48 lg:w-32 md:w-32 sm:w-28 xs:w-16 ls:w-16 ms:w-16 pointer-events-none z-[-10]"
       />
 
 

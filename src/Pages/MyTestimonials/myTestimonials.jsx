@@ -10,7 +10,7 @@ import arrowRight from '@iconify/icons-mdi/arrow-right';
 // TestimonialCard.
 const TestimonialCard = ({ name, title, image, icon, quote }) => {
   return (
-    <div className="group max-w-md p-8 m-6 rounded-[30px] shadow-lg bg-white relative transform transition-transform duration-300 hover:scale-105 hover:bg-[#684fff] hover:text-white active:scale-110 will-change-transform">
+    <div className="group max-w-md p-8 m-6 rounded-[30px] shadow-lg bg-white relative transform transition-transform duration-300 hover:scale-105 hover:bg-[#684fff] hover:text-[#f9fafb] active:scale-110 will-change-transform">
       <div className="flex items-center gap-4 mb-4 relative">
         {/* Profile Image */}
         <div className="relative">
@@ -20,26 +20,26 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
             className="w-16 h-16 rounded-full shadow-[0_0_0_2px_#f8f9ff] transition-shadow duration-600 group-hover:shadow-[0_0_0_2px_white]"
           />
           {/* Icon Image */}
-          <div className="absolute -top-16 left-6 w-16 h-16 flex items-center justify-center rounded-full ransition-transform duration-300 group-hover:bg-[#684fff]">
+          <div className="absolute -top-16 left-6 w-16 h-16 flex items-center justify-center rounded-full ransition-transform duration-300 group-hover:bg-[#684fff] group-hover:text-[#f9fafb]">
             <img
               src={icon}
               alt="icon"
-              className="w-14 h-14 transition-transform duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert"
+              className="w-14 h-14 transition-transform duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert group-hover"
             />
           </div>
         </div>
         {/* Name and Title */}
         <div>
-          <p className="text-28 md:text-28md sm:text-28sm xs:text-28sm ls:text-28sm ms:text-28sm poppins-semibold mb-2 transition-colors duration-600 group-hover:text-white">
+          <p className="text-28 md:text-28md sm:text-28sm xs:text-28sm ls:text-28sm ms:text-28sm poppins-semibold mb-2 transition-colors duration-600 group-hover:text-[#f9fafb]">
             {name}
           </p>
-          <p className="text-16-1 poppins-medium transition-colors duration-600 group-hover:text-white">
+          <p className="text-16-1 poppins-medium transition-colors duration-600 group-hover:text-[#f9fafb]">
             {title}
           </p>
         </div>
       </div>
       {/* Quote */}
-      <p className="text-16-2 text-gray-700 poppins-regular transition-colors duration-600 group-hover:text-white">
+      <p className="text-16-2 text-gray-700 poppins-regular transition-colors duration-600 group-hover:text-[#f9fafb]">
         {quote}
       </p>
     </div>
