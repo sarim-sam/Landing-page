@@ -422,7 +422,10 @@ input {
 .modal-body{
   z-index: 5999;
 }
-/* Define animations for sliding left and right */
+
+
+/* SAM */
+/* LEFT RIGHT BUTTONS */
 @keyframes slideLeft {
   from {
     transform: translateX(100%);
@@ -433,7 +436,6 @@ input {
     opacity: 1;
   }
 }
-
 @keyframes slideRight {
   from {
     transform: translateX(-100%);
@@ -445,57 +447,32 @@ input {
   }
 }
 
+/* FOCUS CENTER */
 .testimonial-card {
   opacity: 1;
   transform: translateX(0);
   transition: none;
 }
-
 .testimonial-card.slide-next {
   animation: slideLeft 0.6s ease-in-out;
 }
-
 .testimonial-card.slide-prev {
   animation: slideRight 0.6s ease-in-out;
 }
-
-
-
-/* Keyframes for sliding left */
-/* Slide Left Animation */
-@keyframes slideLeft {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Slide Right Animation */
-@keyframes slideRight {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Focus Animation */
 .testimonial-card.focus-center {
-  transform: scale(1.15); /* Enlarge the focused card */
-  z-index: 10; /* Bring it to the foreground */
+  transform: scale(1.35); /* Enlarge the focused card */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Add focus shadow */
-  transition: transform 1s ease, box-shadow 1s ease; /* Smooth animation */
+  transition: transform 0.2s ease, box-shadow 2s ease; /* Smooth animation */
 }
-
-/* Non-focused cards */
 .testimonial-card {
   transform: scale(1);
   z-index: 1;
+}
+
+/* FOCUS CENTER */
+.testimonial-card.focus-center {
+  transform: scale(1.35); /* Enlarge the focused card */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Add focus shadow */
+  z-index: 2;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
 }

@@ -40,7 +40,7 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: 'Amelia Joseph',
+    name: 'Amelia Joseph 3',
     title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
@@ -48,7 +48,7 @@ export const testimonials = [
   },
   {
     id: 4,
-    name: 'Amelia Joseph',
+    name: 'Amelia Joseph 4',
     title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
@@ -56,7 +56,7 @@ export const testimonials = [
   },
   {
     id: 5,
-    name: 'Amelia Joseph',
+    name: 'Amelia Joseph 5',
     title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
@@ -64,7 +64,7 @@ export const testimonials = [
   },
   {
     id: 6,
-    name: 'Amelia Joseph',
+    name: 'Amelia Joseph 6',
     title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
