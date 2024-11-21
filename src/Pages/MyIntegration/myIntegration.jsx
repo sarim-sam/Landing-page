@@ -16,7 +16,7 @@ const MyIntegration = () => {
       {/* Background Image */}
       <img 
         src="/column.png" 
-        className="absolute inset-0 w-full h-full max-h-[1920px] object-cover"
+        className="absolute inset-0 w-full h-full object-cover"
         alt="Background Overlay"
       />
       {/* <svg className='absolute inset-0 w-full h-full object-cover' width="1189" height="890" viewBox="0 0 1189 890" fill="none" xmlns="http://www.w3.org/2000/svg">
