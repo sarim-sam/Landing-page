@@ -46,10 +46,18 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
 // Testimonials.
 export const Testimonials = ({ startIndex, direction }) => {
   const visibleTestimonials = testimonials.slice(startIndex, startIndex + 3);
+
   return (
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {visibleTestimonials.map((testimonial, index) => (
-        <div key={index} className={`testimonial-card ${direction}`}>
+        <div
+          key={index}
+          className={`testimonial-card ${direction}`}
+          style={{
+            marginLeft: '12px', // Uniform left margin for all cards
+            marginRight: '12px', // Uniform right margin for all cards
+          }}
+        >
           <TestimonialCard {...testimonial} />
         </div>
       ))}
@@ -75,7 +83,7 @@ const MyTestimonials = () => {
   };
   return (
     <div
-      className="relative w-full min-h-[55vh] bg-[#FFFFFF] overflow-hidden flex flex-col items-start justify-start mt-14">
+      className="relative w-full min-h-[637px] bg-[#FFFFFF] overflow-hidden flex flex-col items-start justify-start mt-14">
     <img
       src="/myGroup.png"
       alt="Background"
