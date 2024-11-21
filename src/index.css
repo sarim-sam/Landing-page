@@ -439,7 +439,7 @@ input {
 @keyframes slideRight {
   from {
     transform: translateX(-100%);
-    opacity: 0;
+    opacity: 1;
   }
   to {
     transform: translateX(0);
@@ -454,10 +454,10 @@ input {
   transition: none;
 }
 .testimonial-card.slide-next {
-  animation: slideLeft 0.6s ease-in-out;
+  animation: slideLeft 0.6s ease-in;
 }
 .testimonial-card.slide-prev {
-  animation: slideRight 0.6s ease-in-out;
+  animation: slideRight 0.6s ease-in;
 }
 .testimonial-card.focus-center {
   transform: scale(1.35); /* Enlarge the focused card */
