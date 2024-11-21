@@ -14,12 +14,12 @@ const MyIntegration = () => {
       />
 
       {/* Background Image */}
-      {/* <img 
+      <img 
         src="/column.png" 
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full max-h-[1920px] object-cover"
         alt="Background Overlay"
-      /> */}
-      <svg className='absolute inset-0 w-full h-full object-cover' width="1189" height="890" viewBox="0 0 1189 890" fill="none" xmlns="http://www.w3.org/2000/svg">
+      />
+      {/* <svg className='absolute inset-0 w-full h-full object-cover' width="1189" height="890" viewBox="0 0 1189 890" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect opacity="0.1" x="280" width="1" height="890" fill="white"/>
         <rect opacity="0.4" x="14" width="1" height="890" fill="white"/>
         <rect opacity="0.1" x="486" width="1" height="890" fill="white"/>
@@ -43,7 +43,7 @@ const MyIntegration = () => {
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_522_2730" result="shape"/>
         </filter>
         </defs>
-      </svg>
+      </svg> */}
 
 
       {/* Centered Frame and Text Container */}
