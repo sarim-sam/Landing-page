@@ -12,20 +12,23 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
   return (
     <div className="group max-w-md p-8 m-6 rounded-[30px] shadow-lg bg-white relative transform transition-transform duration-300 hover:scale-105 hover:bg-[#684fff] hover:text-white active:scale-110 will-change-transform">
       <div className="flex items-center gap-4 mb-4 relative">
+        {/* Profile Image */}
         <div className="relative">
           <img
             src={image}
             alt={`${name}`}
             className="w-16 h-16 rounded-full shadow-[0_0_0_2px_#f8f9ff] transition-shadow duration-600 group-hover:shadow-[0_0_0_2px_white]"
           />
-        <div className="absolute -top-16 -right-8 w-16 h-16 rounded-full flex items-center justify-center transition-colors duration-300">
+          {/* Icon Image */}
+          <div className="absolute -top-16 left-6 w-16 h-16 flex items-center justify-center rounded-full transition-transform duration-300 group-hover:bg-[#684fff]">
             <img
               src={icon}
-              alt="icons"
-              className="w-14 h-14 transition-transform duration-300 group-hover:invert group-hover:brightness-0"
+              alt="icon"
+              className="w-14 h-14 transition-transform duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert"
             />
           </div>
         </div>
+        {/* Name and Title */}
         <div>
           <p className="text-28 md:text-28md sm:text-28sm xs:text-28sm ls:text-28sm ms:text-28sm poppins-semibold mb-2 transition-colors duration-600 group-hover:text-white">
             {name}
@@ -35,6 +38,7 @@ const TestimonialCard = ({ name, title, image, icon, quote }) => {
           </p>
         </div>
       </div>
+      {/* Quote */}
       <p className="text-16-2 text-gray-700 poppins-regular transition-colors duration-600 group-hover:text-white">
         {quote}
       </p>
