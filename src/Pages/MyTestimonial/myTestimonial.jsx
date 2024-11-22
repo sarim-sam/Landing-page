@@ -116,15 +116,6 @@ useEffect(() => {
   };
 
 
-  const handleDotClick = (index) => {
-    if (index > startIndex) {
-      setDirection('slide-next');
-    } else if (index < startIndex) {
-      setDirection('slide-prev');
-    }
-    setStartIndex(index);
-  };
-
   const getVisibleCards = () => {
     return testimonials.slice(startIndex, startIndex + visibleCards);
   };
