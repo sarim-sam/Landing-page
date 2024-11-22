@@ -81,7 +81,7 @@ const MyTestimonial = () => {
   const [key, setKey] = useState(0);
   const [focusedIndex, setFocusedIndex] = useState(0);
   const [animateFocus, setAnimateFocus] = useState(false);
-  const autoPlaySpeed = 3000;
+
   const totalCards = testimonials.length;
   const [visibleCards, setVisibleCards] = useState(3);
 
@@ -102,14 +102,6 @@ useEffect(() => {
 
   return () => window.removeEventListener('resize', updateVisibleCards);
 }, []);
-
-useEffect(() => {
-  const interval = setInterval(() => {
-    handleNext();
-  }, autoPlaySpeed);
-
-  return () => clearInterval(interval);
-}, [visibleCards]); // Restart autoplay if visible cards change
 
   const handleNext = () => {
     setDirection('slide-next');
@@ -182,21 +174,6 @@ useEffect(() => {
           </button>
         </div>
       </div>
-       {/* Dots */}
-       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          {Array.from({ length: totalCards }).map((_, index) => (
-            <div
-              key={index}
-              onClick={() => handleDotClick(index)}
-              className={`w-4 h-4 rounded-full ${
-                index >= startIndex && index < startIndex + visibleCards
-                  ? 'bg-black'
-                  : 'bg-gray-400'
-              }`}
-            />
-          ))}
-        </div>
-
       {/* Testimonials */}
       <Testimonials
         startIndex={startIndex}

@@ -15,7 +15,6 @@ function App() {
     <>
       <MyIntegration     />
       <MyTestimonial     />
-      <MyCarousel        />
       <MyQuestions       />
       <MyNewsletter      />
       <MyWorkflow        />
