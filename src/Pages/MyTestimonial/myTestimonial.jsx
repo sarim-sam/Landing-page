@@ -182,19 +182,8 @@ useEffect(() => {
           </button>
         </div>
       </div>
-
-      {/* Testimonials */}
-      <Testimonials
-        startIndex={startIndex}
-        direction={direction}
-        key={key}
-        focusedIndex={focusedIndex}
-        animateFocus={animateFocus}
-        getVisibleCards={getVisibleCards}
-      />
-
-      {/* Dots */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+       {/* Dots */}
+       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
           {Array.from({ length: totalCards }).map((_, index) => (
             <div
               key={index}
@@ -207,6 +196,18 @@ useEffect(() => {
             />
           ))}
         </div>
+
+      {/* Testimonials */}
+      <Testimonials
+        startIndex={startIndex}
+        direction={direction}
+        key={key}
+        focusedIndex={focusedIndex}
+        animateFocus={animateFocus}
+        getVisibleCards={getVisibleCards}
+      />
+
+     
       </div>
   );
 };
