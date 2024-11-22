@@ -7,8 +7,6 @@ import MyFooter from './Pages/MyFooter/myFooter.jsx';
 import MyTestimonial from './Pages/MyTestimonial/myTestimonial.jsx';
 
 
-
-
 function App() {
   return (
     <div className='flex flex-col gap-4'>
