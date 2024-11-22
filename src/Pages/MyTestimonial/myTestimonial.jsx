@@ -89,20 +89,20 @@ const MyTestimonial = () => {
   const totalCards = testimonials.length;
   const [visibleCards, setVisibleCards] = useState(3);
 
-// Update visible cards based on screen size
+
 useEffect(() => {
   const updateVisibleCards = () => {
     if (window.innerWidth < 768) {
-      setVisibleCards(1); // Show 1 card for small screens (sm)
+      setVisibleCards(1); 
     } else if (window.innerWidth < 1024) {
-      setVisibleCards(2); // Show 2 cards for medium screens (md)
+      setVisibleCards(2); 
     } else {
-      setVisibleCards(3); // Show 3 cards for large screens
+      setVisibleCards(3); 
     }
   };
 
-  updateVisibleCards(); // Set initially
-  window.addEventListener('resize', updateVisibleCards); // Update on resize
+  updateVisibleCards(); 
+  window.addEventListener('resize', updateVisibleCards); 
 
   return () => window.removeEventListener('resize', updateVisibleCards);
 }, []);
