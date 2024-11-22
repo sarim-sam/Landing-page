@@ -25,9 +25,25 @@ const TestimonialCard = ({ name, title, image, white, black, quote1, quote2 }) =
           {/* Icon Image */}
           <div className="absolute -top-14 left-3 w-28 h-28 flex items-center justify-center rounded-full transition-transform duration-300">
           {isHovered ? (
-              <img src={black} alt="Hovered Icon"  className="absolute w-28 h-28 top-[-14px]"/>
+              <svg width="136" height="156" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_522_2806)">
+              <path d="M56.16 35.624C52.352 35.624 49.048 38.256 49.048 43.856C49.048 51.864 55.6 56.568 59.24 57.016L60.08 54.832C57.952 53.432 56.16 51.024 56.328 49.624C58.736 49.456 62.656 48.112 62.656 42.904C62.712 38.928 60.472 35.624 56.16 35.624ZM72.4 35.624C68.592 35.624 65.288 38.256 65.288 43.856C65.288 51.864 71.84 56.568 75.48 57.016L76.32 54.832C74.192 53.432 72.4 51.024 72.568 49.624C74.976 49.456 78.896 48.112 78.896 42.904C78.952 38.928 76.712 35.624 72.4 35.624ZM43.56 62L54.088 68.44C50 70.736 43 74.264 36 76L43.56 62ZM64 20C79.176 20 92 31.648 92 45.648C92 60.824 79.176 71.296 64 71.296C48.824 71.296 36 60.824 36 45.648C36 31.648 48.824 20 64 20Z" fill="#F9FAFB"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_522_2806" x="0" y="0" width="136" height="136" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dx="4" dy="20"/>
+              <feGaussianBlur stdDeviation="20"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_522_2806"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_522_2806" result="shape"/>
+              </filter>
+              </defs>
+              </svg>
             ) : (
-              <img src={white} alt="Default Icon" className="absolute w-14 h-14  top-[-4px]"/>
+              <img src={white} alt="Default Icon" className="absolute w-14 h-14 -top-[6px]"/>
             )}
         </div>
         </div>
