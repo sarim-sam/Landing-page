@@ -23,7 +23,7 @@ const TestimonialCard = ({ name, title, image, white, black, quote1, quote2 }) =
             className="w-16 h-16 rounded-full shadow-[0_0_0_2px_#f8f9ff] transition-shadow duration-600 group-hover:shadow-[0_0_0_2px_white]"
           />
           {/* Icon Image */}
-          <div className="absolute -top-14 left-3 w-40 h-40 flex items-center justify-center rounded-full transition-transform duration-300">
+          <div className="absolute -top-14 left-3 w-28 h-28 flex items-center justify-center rounded-full transition-transform duration-300">
           {isHovered ? (
               <img src={black} alt="Hovered Icon"  className="absolute w-28 h-28 top-[-14px]"/>
             ) : (
