@@ -21,6 +21,7 @@ export const faqs = [
   },
 ];
 
+
 export const testimonials = [
   {
     id: 1,
@@ -28,7 +29,8 @@ export const testimonials = [
     title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
-    quote: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations. Creativity flowed, and the results were beyond my expectations.',
+    quote1: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.',
+    quote2: 'Creativity flowed, and the results were beyond my expectations.',
   },
   {
     id: 2,
@@ -36,7 +38,9 @@ export const testimonials = [
     title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
-    quote: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations. Creativity flowed, and the results were beyond my expectations.',
+    quote1: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.',
+    quote2: 'Creativity flowed, and the results were beyond my expectations.',
+    
   },
   {
     id: 3,
@@ -44,7 +48,8 @@ export const testimonials = [
     title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
-    quote: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations. Creativity flowed, and the results were beyond my expectations.',
+    quote1: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.',
+    quote2: 'Creativity flowed, and the results were beyond my expectations.',
   },
   {
     id: 4,
@@ -52,7 +57,8 @@ export const testimonials = [
     title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
-    quote: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations. Creativity flowed, and the results were beyond my expectations.',
+    quote1: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.',
+    quote2: 'Creativity flowed, and the results were beyond my expectations.',
   },
   {
     id: 5,
@@ -60,7 +66,9 @@ export const testimonials = [
     title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
-    quote: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations. Creativity flowed, and the results were beyond my expectations.',
+    quote1: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.',
+    quote2: 'Creativity flowed, and the results were beyond my expectations.',
+    
   },
   {
     id: 6,
@@ -68,7 +76,7 @@ export const testimonials = [
     title: 'Chief Manager',
     image: '/amelia.jpg?height=76&width=76',
     icon:  '/vector.png?height=76&width=76',
-    quote: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations. Creativity flowed, and the results were beyond my expectations.',
+    quote1: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.',
+    quote2: 'Creativity flowed, and the results were beyond my expectations.',
   },
 ];
-
