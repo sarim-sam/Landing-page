@@ -75,7 +75,7 @@ export const Testimonials = ({ getVisibleCards, direction, focusedIndex, animate
 };
 
 // MyTestimonials.
-const MyTestimonialsOld = () => {
+const MyTestimonial = () => {
   const [startIndex, setStartIndex] = useState(0);
   const [direction, setDirection] = useState('');
   const [key, setKey] = useState(0);
@@ -211,4 +211,4 @@ useEffect(() => {
   );
 };
 
-export default MyTestimonialsOld;
+export default MyTestimonial;
