@@ -7,7 +7,7 @@ import arrowRight from '@iconify/icons-mdi/arrow-right';
 
 
 // Frontend
-const TestimonialCard = ({ name, title, image, icon, quote1, quote2 }) => {
+const TestimonialCard = ({ name, title, image, icon, iconb, quote1, quote2 }) => {
   return (
     <div className="group max-w-md p-8 m-6 rounded-[30px] shadow-lg bg-white relative transform transition-transform duration-300 hover:scale-105 hover:bg-[#684fff] hover:text-[#f9fafb] active:scale-110 will-change-transform">
       <div className="flex items-center gap-4 mb-4 relative">
@@ -19,13 +19,20 @@ const TestimonialCard = ({ name, title, image, icon, quote1, quote2 }) => {
             className="w-16 h-16 rounded-full shadow-[0_0_0_2px_#f8f9ff] transition-shadow duration-600 group-hover:shadow-[0_0_0_2px_white]"
           />
           {/* Icon Image */}
-          <div className="absolute -top-16 left-6 w-16 h-16 flex items-center justify-center rounded-full ransition-transform duration-300 group-hover:bg-[#684fff]  group-hover:text-[#f9fafb]">
-            <img
-              src={icon}
-              alt="icon"
-              className="w-14 h-14 transition-transform duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert group-hover"
-            />
-          </div>
+          <div className="absolute -top-10 left-6 w-16 h-16 flex items-center justify-center rounded-full transition-transform duration-300">
+          {/* Default black icon */}
+          <img
+            src={icon}
+            alt="default icon"
+            className="w-14 h-14 transition-opacity duration-300 opacity-100 group-hover:opacity-0"
+          />
+          {/* Hover icon */}
+          < img
+            src={iconb}
+            alt="hover icon"
+            className="absolute w-24 h-24 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+          />
+        </div>
         </div>
         {/* Name and Title */}
         <div>
