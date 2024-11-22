@@ -43,7 +43,7 @@ const TestimonialCard = ({ name, title, image, white, black, quote1, quote2 }) =
               </defs>
               </svg>
             ) : (
-              <img src={white} alt="Default Icon" className="absolute w-14 h-14 -top-[6px]"/>
+              <img src={white} alt="Default Icon" className="absolute w-12 h-12 top-[1px]"/>
             )}
         </div>
         </div>
