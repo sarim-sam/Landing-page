@@ -11,7 +11,7 @@ import MyTestimonial from './Pages/MyTestimonial/myTestimonial.jsx';
 
 function App() {
   return (
-    <>
+    <div className='flex flex-col gap-4'>
       <MyIntegration     />
       <MyTestimonial     />
       <MyQuestions       />
@@ -19,7 +19,7 @@ function App() {
       <MyWorkflow        />
       <MyFooter          />
 
-    </>
+    </div>
   );
 }
 
