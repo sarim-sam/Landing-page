@@ -23,7 +23,7 @@ const TestimonialCard = ({ name, title, image, white, black, quote1, quote2 }) =
             className="w-16 h-16 rounded-full shadow-[0_0_0_2px_#f8f9ff] transition-shadow duration-600 group-hover:shadow-[0_0_0_2px_white]"
           />
           {/* Icon Image */}
-          <div className="absolute -top-14 left-3 w-28 h-28 flex items-center justify-center rounded-full transition-transform duration-300">
+          <div className="absolute -top-16 left-3 w-28 h-28 flex items-center justify-center rounded-full transition-transform duration-300">
           {isHovered ? (
               <svg width="136" height="156" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d_522_2806)">
@@ -43,7 +43,7 @@ const TestimonialCard = ({ name, title, image, white, black, quote1, quote2 }) =
               </defs>
               </svg>
             ) : (
-              <img src={white} alt="Default Icon" className="absolute w-12 h-12 top-[1px]"/>
+              <img src={white} alt="Default Icon" className="absolute w-12 h-12 top-[0px]"/>
             )}
         </div>
         </div>
